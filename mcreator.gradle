@@ -1,0 +1,367 @@
+repositories {
+maven {
+  url = "https://maven.theillusivec4.top/"
+  }
+}
+
+dependencies {
+  runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.4.2+1.20.1")
+  compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.4.2+1.20.1:api")
+}
+minecraft {
+  runs {
+     client {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+
+      server {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+      data {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+  }
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf("curse.maven:apothic-attributes-898963:5209162")
+}
+
+
+minecraft {
+	runs {
+		client {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+		}	
+	}
+}  
+repositories {
+	maven {
+		url "https://www.cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
+}
+dependencies {
+	compileOnly fg.deobf("curse.maven:jade-324717:4986594")
+	runtimeOnly fg.deobf("curse.maven:jade-324717:4986594")
+}
+
+
+repositories {
+  maven {
+      url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.2.3')
+}
+
+minecraft {
+  runs {
+     client {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+      server {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+      data {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+  }
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf("curse.maven:attributefix-280510:4911084")
+}
+
+
+minecraft {
+  runs {
+   client {    
+      property 'mixin.env.remapRefMap', 'true'
+      property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+       }
+        server {
+         property 'mixin.env.remapRefMap', 'true'
+         property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+       }
+      }
+     }
+
+repositories {
+ maven {
+     url = 'https://maven.kosmx.dev/'
+ }
+}
+
+ dependencies {
+   implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.20")
+ }
+
+
+repositories {
+  maven {
+    // location of the maven that hosts JEI files
+    name = "Progwml6 maven"
+    url = "https://dvs1.progwml6.com/files/maven/"
+  }    
+  maven {
+    // location of a maven mirror for JEI files, as a fallback
+    name = "ModMaven"
+    url = "https://modmaven.dev"
+  }   
+}
+
+dependencies {
+  compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.2.0.27")
+  compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.27")
+  runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.27")
+}
+
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+   compileOnly fg.deobf("curse.maven:cloth-config-forge-348521:4633444")
+   runtimeOnly fg.deobf("curse.maven:cloth-config-forge-348521:4633444")
+}
+
+
+repositories {
+flatDir {
+    dirs 'libs'
+}
+}
+
+dependencies {
+implementation fg.deobf("dev.xkmc.l2serial:l2serial:1.2.2")
+}
+
+
+repositories {
+  maven {
+    url = "https://cursemaven.com"
+  }
+}
+
+dependencies {
+  implementation fg.deobf("curse.maven:kleidersplayerrenderer-682065:4783309")
+}
+
+
+minecraft {
+	runs {
+		client {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+		}
+		server {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+		}
+		data {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+		}
+	}
+}  
+repositories {
+	maven {
+		url = "https://jitpack.io"
+	}
+}
+
+dependencies {
+	compileOnly fg.deobf("com.github.Virtuoel:Pehkui:3.7.12-1.20.1-forge")
+	runtimeOnly fg.deobf("com.github.Virtuoel:Pehkui:3.7.12-1.20.1-forge")
+}
+
+
+repositories {
+  maven {
+    // location of the maven that hosts JEI files
+    name = "BlameJared Maven"
+    url = "https://maven.blamejared.com"
+  }    
+}
+
+dependencies {
+  compileOnly fg.deobf('com.blamejared.crafttweaker:CraftTweaker-forge-1.20.1:14.0.17')
+  runtimeOnly fg.deobf('com.blamejared.crafttweaker:CraftTweaker-forge-1.20.1:14.0.17')
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf('curse.maven:l2library-620203:5071762')
+}
+
+
+repositories {
+flatDir {
+    dirs 'libs'
+}
+}
+
+dependencies {
+implementation(jarJar(fg.deobf("dev.xkmc.l2damagetracker:l2damagetracker:0.3.7"))) {
+    transitive = false
+    jarJar.ranged(it, "[0.3.7,)")
+}
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf('curse.maven:l2-complements-758349:5073093')
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf("curse.maven:classic-bars-317642:5134370")
+}
+
+
+minecraft {
+  runs {
+      client {
+          property 'mixin.env.remapRefMap', 'true'
+          property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+      }
+  }
+}
+repositories {
+  maven {
+    url = "https://maven.blamejared.com"
+  }
+}
+
+dependencies {
+  compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE:api")
+  runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE")
+}
+
+
+
+repositories {
+ maven {
+     url = 'https://cursemaven.com/'
+ }
+}
+
+dependencies {
+  compileOnly fg.deobf("curse.maven:embeddium-908741:4984832")
+  runtimeOnly fg.deobf("curse.maven:embeddium-908741:4984832")
+}
+  minecraft {
+    runs {
+       client {
+          property 'mixin.env.remapRefMap', 'true'
+          property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+      }
+  
+        server {
+          property 'mixin.env.remapRefMap', 'true'
+          property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+      }
+        data {
+          property 'mixin.env.remapRefMap', 'true'
+          property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+      }
+    }
+  }
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf('curse.maven:l2hostility-909207:5103680')
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf("curse.maven:placebo-283644:5098182")
+}
+
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+   compileOnly fg.deobf("curse.maven:mpp-forge-986014:5175633")
+   runtimeOnly fg.deobf("curse.maven:mpp-forge-986014:5175633")
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf("curse.maven:apotheosis-313970:5209354")
+}
+
+

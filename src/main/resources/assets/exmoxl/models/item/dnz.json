@@ -1,0 +1,7 @@
+{
+  "parent": "exmoxl:custom/jian_",
+  "textures": {
+    "1": "exmoxl:block/jian_",
+    "particle": "exmoxl:item/a"
+  }
+}

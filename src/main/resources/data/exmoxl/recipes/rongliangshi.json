@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "exmoxl:miscellaneous_dust"
+    },
+    "b": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "item": "exmoxl:smelting_stone",
+    "count": 1
+  }
+}

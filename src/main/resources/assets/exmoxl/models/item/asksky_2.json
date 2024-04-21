@@ -1,0 +1,6 @@
+{
+  "parent": "exmoxl:displaysettings/asksky2.item",
+  "textures": {
+    "layer0": "exmoxl:item/texture"
+  }
+}

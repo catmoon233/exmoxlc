@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "exmoxl:block/furnace",
+    "up": "exmoxl:block/furnace",
+    "north": "exmoxl:block/furnace",
+    "east": "exmoxl:block/furnace",
+    "south": "exmoxl:block/furnace",
+    "west": "exmoxl:block/furnace",
+    "particle": "exmoxl:block/furnace"
+  },
+  "render_type": "solid"
+}

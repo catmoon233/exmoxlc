@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "simplyswords:whisperwind"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wom:ender_blaster"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wom:ender_antitheus"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "simplyswords:soulrender"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "simplyswords:bramblethorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "exmoxl:dnz"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"unbreaking\",lvl:10s}],display:{color:16711680,Name:'{\"text\":\"你歪啦！\"}',Lore:['{\"text\":\"一个石头，看到这个就代表你歪了\"}']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{Unbreakable:true}"
+    }
+  ],
+  "random_sequence": "exmoxl:yellowweapon"
+}

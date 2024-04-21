@@ -1,0 +1,7 @@
+{
+  "parent": "exmoxl:custom/sword_0",
+  "textures": {
+    "0": "exmoxl:block/sword_0",
+    "particle": "exmoxl:item/a"
+  }
+}
