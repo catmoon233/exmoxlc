@@ -46,14 +46,14 @@ public class SdOverlay {
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.setShaderColor(1, 1, 1, 1);
             //if (Test.islook) {
-			if(false){
+		/*	if(false){
               Test.islook = false;
                 int BGside = w- ((w/2) +87)-50;
 			event.getGuiGraphics().blit(new ResourceLocation("exmoxl:textures/screens/hui.png"), (w/2) -87 - BGside, h/2 -84, 0, 0, BGside, 100, 50, 50);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Test.distext, (w/2) -87 - BGside, h/2 -84, -1, false);
 
 
-			}
+			}*/
 			RenderSystem.depthMask(true);
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.enableDepthTest();

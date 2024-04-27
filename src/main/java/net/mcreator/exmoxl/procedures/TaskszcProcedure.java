@@ -24,8 +24,8 @@ public class TaskszcProcedure {
             pl = (entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).task;
             int mx = TaskguiScreen.mx;
             int my = TaskguiScreen.my;
-            int px = TaskguiScreen.px;
-            int py = TaskguiScreen.py;
+            int px = TaskguiScreen.px ;
+            int py = TaskguiScreen.py + 15;
 
             if (mx <px+130&mx > px){
                 for (int i = 0; i < pl.size(); i++){
