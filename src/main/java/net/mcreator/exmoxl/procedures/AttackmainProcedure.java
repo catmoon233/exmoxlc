@@ -60,7 +60,8 @@ public class AttackmainProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
 		if (damagesource == null || entity == null || sourceentity == null)
 			return;
-		
+		LivingEntity livingentity = (LivingEntity)entity;
+
 		String entityid = "";
 		double damage = 0;
 		double attackDamage = 0;
@@ -112,7 +113,7 @@ public class AttackmainProcedure {
 					if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(ExmoxlModAttributes.HITRATE.get()) != null) {
 						hitratea = ((LivingEntity) sourceentity).getAttribute(ExmoxlModAttributes.HITRATE.get()).getValue();
 					}
-					if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(ExmoxlModAttributes.EVASION.get()) != null) {
+					if (livingentity.getAttribute(ExmoxlModAttributes.EVASION.get()) != null) {
 						if (((LivingEntity) entity).getAttribute(ExmoxlModAttributes.EVASION.get()).getValue() - hitratea > 0) {
 							iseva = true;
 						} else {
@@ -168,7 +169,7 @@ public class AttackmainProcedure {
 								(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("level",
 										((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("level") + 1));
 								(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("xp", 0);
-								shdamage = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("quality") * attackDamage * 0.1;
+								shdamage = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("quality")*0.5 * attackDamage * 0.04;
 								AttributeModifier qhmor = new AttributeModifier(UUID.fromString("164aba86-cce2-432a-b123-0669ce5ee6df"), "等级伤害加成", shdamage, AttributeModifier.Operation.ADDITION);
 								if (ChangeattrProcedure.hasAttributeModifierCompoundTag((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), Attributes.ATTACK_DAMAGE, qhmor,
 										net.minecraft.world.entity.EquipmentSlot.MAINHAND)) {
@@ -183,12 +184,12 @@ public class AttackmainProcedure {
 								}
 								if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 									_player.displayClientMessage(Component.literal(
-											("" + ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()) + "\u6211\u5347\u7EA7\u4E86\uFF0C\u5F53\u524D\u7B49\u7EA7:\u00A7a\u00A7l"
+											("" + ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()) + "§r我升级了，当前等级:§a§l"
 													+ ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("level")))),
 											false);
-								(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("xpneed",
-										((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("xpneed")
-												* (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("level")));
+								(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("xpneed",(int)(
+										200 * Math.pow(1.5,  ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("level")) -1) ));
+
 							}
 						}
 						if (EnchantmentHelper.getItemEnchantmentLevel(ExmoxlModEnchantments.BLOODTHIRSTY.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
@@ -234,7 +235,7 @@ public class AttackmainProcedure {
 								}
 							}
 						}
-						if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(ExmoxlModAttributes.MIANSHAN.get()) != null) {
+						if (livingentity.getAttribute(ExmoxlModAttributes.MIANSHAN.get()) != null) {
 							if (1 - ((LivingEntity) entity).getAttribute(ExmoxlModAttributes.MIANSHAN.get()).getValue() * 0.01 > 0) {
 								damage = damage * (1 - ((LivingEntity) entity).getAttribute(ExmoxlModAttributes.MIANSHAN.get()).getValue() * 0.01);
 								pierce = pierce * (1 - ((LivingEntity) entity).getAttribute(ExmoxlModAttributes.MIANSHAN.get()).getValue() * 0.01);
@@ -253,8 +254,8 @@ public class AttackmainProcedure {
 								}
 							}
 						}
-						if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(ExmoxlModAttributes.REBOUND.get()) != null) {
-							if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(ExmoxlModAttributes.REBOUNDLV.get()) != null) {
+						if (livingentity.getAttribute(ExmoxlModAttributes.REBOUND.get()) != null) {
+							if (livingentity.getAttribute(ExmoxlModAttributes.REBOUNDLV.get()) != null) {
 								if (((LivingEntity) entity).getAttribute(ExmoxlModAttributes.REBOUND.get()).getValue() > 0) {
 									if ((sourceentity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).wearonxumiring) {
 										defsgl = 50;

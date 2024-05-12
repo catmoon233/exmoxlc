@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "exmoxl:block/oak_planks",
+    "up": "exmoxl:block/crafting_table_top",
+    "north": "exmoxl:block/crafting_table_front",
+    "east": "exmoxl:block/crafting_table_side",
+    "south": "exmoxl:block/crafting_table_side",
+    "west": "exmoxl:block/crafting_table_side",
+    "particle": "exmoxl:block/oak_planks"
+  },
+  "render_type": "solid"
+}

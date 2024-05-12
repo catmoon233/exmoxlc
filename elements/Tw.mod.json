@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "人物面板（未完善）",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Openpersonalpanel"
+    }
+  }
+}

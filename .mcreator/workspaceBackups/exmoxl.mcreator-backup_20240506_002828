@@ -1,0 +1,4808 @@
+{
+  "mod_elements": [
+    {
+      "name": "Wood",
+      "type": "damagetype",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/damage_type/wood.json"
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "AskskyShiTiBeiGongJuJiZhongShi",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "asksky_shi_ti_bei_gong_ju_ji_zhong_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AskskyShiTiBeiGongJuJiZhongShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Wandao",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wandao",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/wandao.json",
+          "src/main/java/net/mcreator/exmoxl/item/WandaoItem.java"
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Asksky",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "asksky",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/asksky.json",
+          "src/main/java/net/mcreator/exmoxl/item/AskskyItem.java"
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Piercedamage",
+      "type": "damagetype",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piercedamage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/damage_type/piercedamage.json"
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Attackmain",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "attackmain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AttackmainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Tick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/TickProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Playerspawnsxset",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerspawnsxset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/PlayerspawnsxsetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Sethp",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sethp",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "Athp",
+      "type": "command",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "athp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/AthpCommand.java"
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "Atat",
+      "type": "command",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/AtatCommand.java"
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "Setat",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/SetatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "Shmove",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shmove",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ShmoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "Shmovec",
+      "type": "command",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shmovec",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/ShmovecCommand.java"
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "Firedamage",
+      "type": "damagetype",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firedamage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/damage_type/firedamage.json"
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Goldendamage",
+      "type": "damagetype",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldendamage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/damage_type/goldendamage.json"
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "EarthElementaldamage",
+      "type": "damagetype",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_elementaldamage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/damage_type/earth_elementaldamage.json"
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Axeitema",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "axeitema",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AxeitemaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/weapon/aptitude"
+    },
+    {
+      "name": "Axeac",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "axeac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AxeacProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/weapon/aptitude"
+    },
+    {
+      "name": "Readaxeac",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "readaxeac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ReadaxeacProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/weapon/aptitude"
+    },
+    {
+      "name": "Attackcancle",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "attackcancle",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AttackcancleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Selfmodle",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selfmodle",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/SelfmodleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "CharacterPanel",
+      "type": "gui",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_panel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/world/inventory/CharacterPanelMenu.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/CharacterPanelScreen.java"
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Openpersonalpanel",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openpersonalpanel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/OpenpersonalpanelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Tw",
+      "type": "keybind",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/network/TwMessage.java"
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "RefreshQuality",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "refresh_quality",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RefreshQualityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/weapon/randomtool"
+    },
+    {
+      "name": "Rendertoolquality",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rendertoolquality",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/weapon/randomtool"
+    },
+    {
+      "name": "Bloodthirsty",
+      "type": "enchantment",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodthirsty",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/enchantment/BloodthirstyEnchantment.java"
+        ]
+      },
+      "path": "~/weapon/randomtool"
+    },
+    {
+      "name": "Activatigui",
+      "type": "gui",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activatigui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/world/inventory/ActivatiguiMenu.java",
+          "src/main/java/net/mcreator/exmoxl/network/ActivatiguiSlotMessage.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/ActivatiguiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Activator",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/block/ActivatorBlock.java",
+          "src/main/resources/assets/exmoxl/blockstates/activator.json",
+          "src/main/java/net/mcreator/exmoxl/block/entity/ActivatorBlockEntity.java",
+          "src/main/resources/assets/exmoxl/models/block/activator.json",
+          "src/main/resources/assets/exmoxl/models/item/activator.json"
+        ]
+      }
+    },
+    {
+      "name": "Activatiguiclaa1",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activatiguiclaa_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Activatiguiclaa1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StarFlamePowder",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_flame_powder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/star_flame_powder.json",
+          "src/main/java/net/mcreator/exmoxl/item/StarFlamePowderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Starflame",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starflame",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/recipes/starflame.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "MiscellaneousDust",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miscellaneous_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/miscellaneous_dust.json",
+          "src/main/java/net/mcreator/exmoxl/item/MiscellaneousDustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Threeflame",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threeflame",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/threeflame.json",
+          "src/main/java/net/mcreator/exmoxl/item/ThreeflameItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Activatiguit",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activatiguit",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ActivatiguitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Activatiguit2",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activatiguit_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Activatiguit2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ActivatiguiGaiGUIDaKaiShiMeiKeFaSheng",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activatigui_gai_gui_da_kai_shi_mei_ke_fa_sheng",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ActivatiguiGaiGUIDaKaiShiMeiKeFaShengProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrammelsList",
+      "type": "code",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "trammels_list",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/TrammelsList.java"
+        ]
+      },
+      "path": "~/trammels"
+    },
+    {
+      "name": "DoubleWhammy",
+      "type": "potioneffect",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_whammy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/potion/DoubleWhammyMobEffect.java"
+        ]
+      },
+      "path": "~/trammels"
+    },
+    {
+      "name": "Activatorre",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activatorre",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/recipes/activatorre.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "SmeltingStone",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelting_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/smelting_stone.json",
+          "src/main/java/net/mcreator/exmoxl/item/SmeltingStoneItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SmeltingStonere",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelting_stonere",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/recipes/smelting_stonere.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "Recasting",
+      "type": "gui",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "recasting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/world/inventory/RecastingMenu.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/RecastingScreen.java",
+          "src/main/java/net/mcreator/exmoxl/network/RecastingButtonMessage.java"
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Strengtheningmaterials",
+      "type": "tag",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strengtheningmaterials",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/strengtheningmaterials.json"
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Recastinglc",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "recastinglc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RecastinglcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Washstone",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "washstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/washstone.json",
+          "src/main/java/net/mcreator/exmoxl/item/WashstoneItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Lightingboltinzhuzi",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightingboltinzhuzi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/LightingboltinzhuziProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Washtool",
+      "type": "achievement",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "washtool",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/advancements/washtool.json"
+        ]
+      },
+      "path": "~/weapon/randomtool"
+    },
+    {
+      "name": "WashTick",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wash_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/WashTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon/randomtool"
+    },
+    {
+      "name": "Removeuuid",
+      "type": "code",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "removeuuid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/Removeuuid.java"
+        ]
+      }
+    },
+    {
+      "name": "Refreshquailtyforarmor",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refreshquailtyforarmor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RefreshquailtyforarmorProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/weapon/randomtool"
+    },
+    {
+      "name": "RecastingTable",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recasting_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/recasting_table.json",
+          "src/main/java/net/mcreator/exmoxl/block/RecastingTableBlock.java",
+          "src/main/resources/assets/exmoxl/models/block/recasting_table.json",
+          "src/main/java/net/mcreator/exmoxl/block/entity/RecastingTableBlockEntity.java",
+          "src/main/resources/assets/exmoxl/blockstates/recasting_table.json"
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Recastinglc2",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "recastinglc_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Recpd1",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recpd_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Recpd1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Recpd2",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recpd_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Recpd2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Recpd3",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recpd_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Recpd3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Rect1",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rect_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Rect1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Rect2",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rect_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Rect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Rect3",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rect_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Rect3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Recxst",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recxst",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RecxstProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "FocusImpact",
+      "type": "enchantment",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "focus_impact",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/enchantment/FocusImpactEnchantment.java"
+        ]
+      },
+      "path": "~/enchanment"
+    },
+    {
+      "name": "Recre",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recre",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/recipes/recre.json"
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Rongliangshi",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rongliangshi",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/recipes/rongliangshi.json"
+        ]
+      },
+      "path": "~/rec"
+    },
+    {
+      "name": "Crit",
+      "type": "attribute",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Critdamage",
+      "type": "attribute",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "critdamage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Pierce",
+      "type": "attribute",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pierce",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "AXEAPTITUDE",
+      "type": "attribute",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axeaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "SWORDAPTITUDE",
+      "type": "attribute",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "STICKAPTITUDE",
+      "type": "attribute",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stickaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "KNIFEAPTITUDE",
+      "type": "attribute",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knifeaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "LIGHTWEAPONSAPTITUDE",
+      "type": "attribute",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightweaponsaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "ATOMICTANKAPTITUDE",
+      "type": "attribute",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atomictankaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "LONGWEAPONAPTITUDE",
+      "type": "attribute",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "longweaponaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "SHORTWEAPONAPTITUDE",
+      "type": "attribute",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shortweaponaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "REMOTEWEAPONSAPTITUDE",
+      "type": "attribute",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remoteweaponsaptitude",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Evasion",
+      "type": "attribute",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evasion",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Mobspawn",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mobspawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/MobspawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "Mianshan",
+      "type": "attribute",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mianshan",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Regper",
+      "type": "potioneffect",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/potion/RegperMobEffect.java"
+        ]
+      },
+      "path": "~/weapon/effect"
+    },
+    {
+      "name": "RegperXiaoGuoChiXuShiMeiKeFaSheng",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regper_xiao_guo_chi_xu_shi_mei_ke_fa_sheng",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RegperXiaoGuoChiXuShiMeiKeFaShengProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/weapon/effect"
+    },
+    {
+      "name": "Rebound",
+      "type": "attribute",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rebound",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Reboundlv",
+      "type": "attribute",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reboundlv",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Hitrate",
+      "type": "attribute",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hitrate",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Deathmain",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "deathmain",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "As",
+      "type": "livingentity",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "as",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/client/renderer/AsRenderer.java",
+          "src/main/java/net/mcreator/exmoxl/entity/AsEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "AsDangShiTiShouShangShi",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "as_dang_shi_ti_shou_shang_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AsDangShiTiShouShangShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "As2",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "as_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/As2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tickboss",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tickboss",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/TickbossProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "Bossabar",
+      "type": "overlay",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bossabar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/client/screens/BossabarOverlay.java"
+        ]
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "XumiRing",
+      "type": "curiosbauble",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xumi_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/xumi_ring.json",
+          "src/main/java/net/mcreator/exmoxl/item/XumiRingItem.java"
+        ]
+      },
+      "path": "~/curios"
+    },
+    {
+      "name": "Bossaprotect",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bossaprotect",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "XumiRingDangZhuangBeiLiaoShiWuShi",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xumi_ring_dang_zhuang_bei_liao_shi_wu_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/XumiRingDangZhuangBeiLiaoShiWuShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/curios"
+    },
+    {
+      "name": "XumiRingDangMeiYouZhuangBeiShiWuShi",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xumi_ring_dang_mei_you_zhuang_bei_shi_wu_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/XumiRingDangMeiYouZhuangBeiShiWuShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/curios"
+    },
+    {
+      "name": "Onatt2",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onatt_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Onatt2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "Chooseclassgui",
+      "type": "gui",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "chooseclassgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/network/ChooseclassguiButtonMessage.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/ChooseclassguiScreen.java",
+          "src/main/java/net/mcreator/exmoxl/world/inventory/ChooseclassguiMenu.java"
+        ]
+      },
+      "path": "~/CLASS"
+    },
+    {
+      "name": "Openchooseclassgui",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openchooseclassgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/OpenchooseclassguiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CLASS"
+    },
+    {
+      "name": "Sda",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sda",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/SdaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Isl2holevel",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "isl_2holevel",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Isl2holevelProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "Renderdisplayername",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "renderdisplayername",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RenderdisplayernameProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "TICKBOSSADISPLAYERNAME",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tickbossadisplayername",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/TICKBOSSADISPLAYERNAMEProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "Changeclass",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "changeclass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ChangeclassProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CLASS"
+    },
+    {
+      "name": "Onmobdeath",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "onmobdeath",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/OnmobdeathProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "Capmap",
+      "type": "code",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "capmap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/Capmap.java"
+        ]
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "Ironp",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ironp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/item/IronpItem.java",
+          "src/main/resources/assets/exmoxl/models/item/ironp_0.json",
+          "src/main/resources/assets/exmoxl/models/item/ironp.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Fbjj",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fbjj",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/FbjjProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/trammels"
+    },
+    {
+      "name": "Ondamage",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ondamage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/OndamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Printindxpr",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "printindxpr",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/PrintindxprProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Printindex",
+      "type": "command",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "printindex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/PrintindexCommand.java"
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Attrforitem",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "attrforitem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AttrforitemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "IronpShuXingZhiTiGongQi",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironp_shu_xing_zhi_ti_gong_qi",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/IronpShuXingZhiTiGongQiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Renderitemtip",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "renderitemtip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RenderitemtipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "BlackFurnace",
+      "type": "block",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_furnace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/block/BlackFurnaceBlock.java",
+          "src/main/resources/assets/exmoxl/blockstates/black_furnace.json",
+          "src/main/resources/assets/exmoxl/models/item/black_furnace.json",
+          "src/main/resources/assets/exmoxl/models/block/black_furnace.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Wrench",
+      "type": "tool",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrench",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/wrench.json",
+          "src/main/java/net/mcreator/exmoxl/item/WrenchItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Wrenchrepice",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrenchrepice",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/recipes/wrenchrepice.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Blackfurnacemain",
+      "type": "block",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackfurnacemain",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/block/blackfurnacemain.json",
+          "src/main/java/net/mcreator/exmoxl/block/BlackfurnacemainBlock.java",
+          "src/main/resources/assets/exmoxl/models/item/blackfurnacemain.json",
+          "src/main/resources/assets/exmoxl/blockstates/blackfurnacemain.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Blackfurnacestep",
+      "type": "block",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackfurnacestep",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/block/blackfurnacestep.json",
+          "src/main/resources/assets/exmoxl/models/block/blackfurnacestep_full.json",
+          "src/main/resources/assets/exmoxl/models/item/blackfurnacestep.json",
+          "src/main/resources/assets/exmoxl/blockstates/blackfurnacestep.json",
+          "src/main/java/net/mcreator/exmoxl/block/BlackfurnacestepBlock.java",
+          "src/main/resources/assets/exmoxl/models/block/blackfurnacestep_top.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BlackfurnacemainDangYouXiKeGengXinShi",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackfurnacemain_dang_you_xi_ke_geng_xin_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/BlackfurnacemainDangYouXiKeGengXinShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Pdstru",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pdstru",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/PdstruProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "WrenchYouJiFangKuaiShiFangKuaiDeWeiZhi",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrench_you_ji_fang_kuai_shi_fang_kuai_de_wei_zhi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "ZhenyaXiaoGuoChiXuShiMeiKeFaSheng",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zhenya_xiao_guo_chi_xu_shi_mei_ke_fa_sheng",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ZhenyaXiaoGuoChiXuShiMeiKeFaShengProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Zhenya",
+      "type": "potioneffect",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zhenya",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/potion/ZhenyaMobEffect.java"
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Yishang",
+      "type": "potioneffect",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yishang",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/potion/YishangMobEffect.java"
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Exmoxl",
+      "type": "tab",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exmoxl",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ZhenyaDangXiaoGuoJieShu",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zhenya_dang_xiao_guo_jie_shu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ZhenyaDangXiaoGuoJieShuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Changeattr",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "changeattr",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ChangeattrProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Onattack",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onattack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AskskyGongJuChuXianZaiShouZhongShiMeiKeFaSheng",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "asksky_gong_ju_chu_xian_zai_shou_zhong_shi_mei_ke_fa_sheng",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AskskyGongJuChuXianZaiShouZhongShiMeiKeFaShengProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Customitem",
+      "type": "item",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "customitem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/item/CustomitemItem.java",
+          "src/main/resources/assets/exmoxl/models/item/customitem.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Attrmb",
+      "type": "gui",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "attrmb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/network/AttrmbButtonMessage.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/AttrmbScreen.java",
+          "src/main/java/net/mcreator/exmoxl/world/inventory/AttrmbMenu.java"
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Intelligence",
+      "type": "attribute",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intelligence",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Strength",
+      "type": "attribute",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Agile",
+      "type": "attribute",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agile",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "OpenattrmbAnXiaAnJianShi",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openattrmb_an_xia_an_jian_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/OpenattrmbAnXiaAnJianShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Openattrmb",
+      "type": "keybind",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openattrmb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/network/OpenattrmbMessage.java"
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Strxs",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strxs",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/StrxsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Igns",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igns",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/IgnsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Agisx",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agisx",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AgisxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Xpxs",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xpxs",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/XpxsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Levelxs",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levelxs",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/LevelxsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Tfdsx",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tfdsx",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/TfdsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Stradd",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stradd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/StraddProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Agiadd",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agiadd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AgiaddProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Igiadd",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igiadd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Tfdc",
+      "type": "command",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tfdc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/TfdcCommand.java"
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Tfdset",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tfdset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/TfdsetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Xsitem",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "xsitem",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/XsitemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon/weaworkbeach"
+    },
+    {
+      "name": "WeaworkbeachYouJiFangKuaiShi",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weaworkbeach_you_ji_fang_kuai_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/WeaworkbeachYouJiFangKuaiShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon/weaworkbeach"
+    },
+    {
+      "name": "Weawordkbeachgui",
+      "type": "gui",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "weawordkbeachgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/client/gui/WeawordkbeachguiScreen.java",
+          "src/main/java/net/mcreator/exmoxl/world/inventory/WeawordkbeachguiMenu.java"
+        ]
+      },
+      "path": "~/weapon/weaworkbeach"
+    },
+    {
+      "name": "Itemmixin",
+      "type": "mixin",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "itemmixin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/ItemmixinMixin.java"
+        ]
+      }
+    },
+    {
+      "name": "Weaworkbeach",
+      "type": "block",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weaworkbeach",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/block/entity/WeaworkbeachBlockEntity.java",
+          "src/main/resources/assets/exmoxl/models/item/weaworkbeach.json",
+          "src/main/java/net/mcreator/exmoxl/block/WeaworkbeachBlock.java",
+          "src/main/resources/assets/exmoxl/blockstates/weaworkbeach.json",
+          "src/main/resources/assets/exmoxl/models/block/weaworkbeach.json"
+        ]
+      },
+      "path": "~/weapon/weaworkbeach"
+    },
+    {
+      "name": "Entityctconfig",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "entityctconfig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/EntityctconfigProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "ENtityctconfigsummon",
+      "type": "procedure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "e_ntityctconfigsummon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ENtityctconfigsummonProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/mobattr"
+    },
+    {
+      "name": "LotteryMain",
+      "type": "gui",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lottery_main",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/world/inventory/LotteryMainMenu.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/LotteryMainScreen.java",
+          "src/main/java/net/mcreator/exmoxl/network/LotteryMainButtonMessage.java"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Lotteryweapon",
+      "type": "gui",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lotteryweapon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/world/inventory/LotteryweaponMenu.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/LotteryweaponScreen.java",
+          "src/main/java/net/mcreator/exmoxl/network/LotteryweaponButtonMessage.java"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Textofchou",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "textofchou",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/TextofchouProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Lotterydan",
+      "type": "gui",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lotterydan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/network/LotterydanButtonMessage.java",
+          "src/main/java/net/mcreator/exmoxl/world/inventory/LotterydanMenu.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/LotterydanScreen.java"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Ramdomka",
+      "type": "procedure",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ramdomka",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RamdomkaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Rendomdanchouxs",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rendomdanchouxs",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RendomdanchouxsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Openlottery",
+      "type": "keybind",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openlottery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/network/OpenlotteryMessage.java"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "OpenlotteryAnXiaAnJianShi",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openlottery_an_xia_an_jian_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/OpenlotteryAnXiaAnJianShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Openlotteryofwapon",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openlotteryofwapon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/OpenlotteryofwaponProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Danchou",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "danchou",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/DanchouProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Randomkashi",
+      "type": "procedure",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "randomkashi",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/RandomkashiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Lotteryshi",
+      "type": "gui",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lotteryshi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/client/gui/LotteryshiScreen.java",
+          "src/main/java/net/mcreator/exmoxl/network/LotteryshiButtonMessage.java",
+          "src/main/java/net/mcreator/exmoxl/world/inventory/LotteryshiMenu.java"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Shilian",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "shilian",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ShilianProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "DnzShiTiBeiGongJuJiZhongShi",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dnz_shi_ti_bei_gong_ju_ji_zhong_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/DnzShiTiBeiGongJuJiZhongShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "DnzGongJuChuXianZaiShouZhongShiMeiKeFaSheng",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dnz_gong_ju_chu_xian_zai_shou_zhong_shi_mei_ke_fa_sheng",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/DnzGongJuChuXianZaiShouZhongShiMeiKeFaShengProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "DnzYouJiFangKuaiShiFangKuaiDeWeiZhi",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dnz_you_ji_fang_kuai_shi_fang_kuai_de_wei_zhi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/DnzYouJiFangKuaiShiFangKuaiDeWeiZhiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Dnz",
+      "type": "tool",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dnz",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/models/item/dnz.json",
+          "src/main/java/net/mcreator/exmoxl/item/DnzItem.java"
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Spirit",
+      "type": "attribute",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirit",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "SpritAttack",
+      "type": "attribute",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sprit_attack",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Textofchou2",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "textofchou_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Textofchou2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Csglc",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "csglc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/CsglcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Csg",
+      "type": "command",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "csg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/CsgCommand.java"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Levelman",
+      "type": "command",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levelman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/LevelmanCommand.java"
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "Levelmanlc",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levelmanlc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/LevelmanlcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "FIRSTATT",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firstatt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/FIRSTATTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "Whiteweapon",
+      "type": "loottable",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whiteweapon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/loot_tables/blocks/whiteweapon.json"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Blueweapon",
+      "type": "loottable",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blueweapon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/loot_tables/blueweapon.json"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Purpurweapon",
+      "type": "loottable",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purpurweapon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/loot_tables/purpurweapon.json"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "Yellowweapon",
+      "type": "loottable",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellowweapon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/loot_tables/yellowweapon.json"
+        ]
+      },
+      "path": "~/Lottery"
+    },
+    {
+      "name": "WoodDamage",
+      "type": "attribute",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "WaterDamage",
+      "type": "attribute",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "FireADamage",
+      "type": "attribute",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_a_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "WoodDefense",
+      "type": "attribute",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_defense",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "WaterDefense",
+      "type": "attribute",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_defense",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "FireDefense",
+      "type": "attribute",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_defense",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Waterdamagetype",
+      "type": "damagetype",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waterdamagetype",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exmoxl/damage_type/waterdamagetype.json"
+        ]
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Atdamage",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atdamage",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AtdamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/system"
+    },
+    {
+      "name": "WoodPercentDamage",
+      "type": "attribute",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_percent_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "FirePercentDamage",
+      "type": "attribute",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_percent_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "WaterPercentDamage",
+      "type": "attribute",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_percent_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Asksky2TeShuXinXi",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "asksky_2_te_shu_xin_xi",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Asksky2TeShuXinXiProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Asksky2",
+      "type": "animateditem",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "asksky_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/item/model/Asksky2ItemModel.java",
+          "src/main/resources/assets/exmoxl/models/item/asksky_2.json",
+          "src/main/java/net/mcreator/exmoxl/item/renderer/Asksky2ItemRenderer.java",
+          "src/main/java/net/mcreator/exmoxl/item/Asksky2Item.java"
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Fazhenentity",
+      "type": "animatedentity",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fazhenentity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/entity/model/FazhenentityModel.java",
+          "src/main/java/net/mcreator/exmoxl/entity/FazhenentityEntity.java",
+          "src/main/java/net/mcreator/exmoxl/client/renderer/FazhenentityRenderer.java"
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Asksky2flysworldDanSheWuFeiXingShiMeiKeFaSheng",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "asksky_2flysworld_dan_she_wu_fei_xing_shi_mei_ke_fa_sheng",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Asksky2flysworldDanSheWuFeiXingShiMeiKeFaShengProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Asksky2flysworld",
+      "type": "projectile",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "asksky_2flysworld",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/entity/Asksky2flysworldEntity.java",
+          "src/main/java/net/mcreator/exmoxl/client/renderer/Asksky2flysworldRenderer.java"
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Asksky2YouJiKongQiShiShiTiDeWeiZhi",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "asksky_2_you_ji_kong_qi_shi_shi_ti_de_wei_zhi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/Asksky2YouJiKongQiShiShiTiDeWeiZhiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "FazhenentityDangShiTiGengXinKeShi",
+      "type": "procedure",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fazhenentity_dang_shi_ti_geng_xin_ke_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/FazhenentityDangShiTiGengXinKeShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/weapon"
+    },
+    {
+      "name": "Taskgui",
+      "type": "gui",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "taskgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/client/gui/TaskguiScreen.java",
+          "src/main/java/net/mcreator/exmoxl/network/TaskguiButtonMessage.java",
+          "src/main/java/net/mcreator/exmoxl/world/inventory/TaskguiMenu.java"
+        ]
+      },
+      "path": "~/task"
+    },
+    {
+      "name": "Firsttask",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "firsttask",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/FirsttaskProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/task"
+    },
+    {
+      "name": "Gettasknr",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gettasknr",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/GettasknrProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/task"
+    },
+    {
+      "name": "PresstAnXiaAnJianShia",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "presst_an_xia_an_jian_shia",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/PresstAnXiaAnJianShiaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Taskszc",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "taskszc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/TaskszcProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/task"
+    },
+    {
+      "name": "GetPOS",
+      "type": "procedure",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "get_pos",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mobattr/hos"
+    },
+    {
+      "name": "Reloadhospos",
+      "type": "command",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reloadhospos",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/ReloadhosposCommand.java"
+        ]
+      },
+      "path": "~/mobattr/hos"
+    },
+    {
+      "name": "Hositymobspawn",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hositymobspawn",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/mobattr/hos"
+    },
+    {
+      "name": "Uiutil",
+      "type": "code",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "uiutil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/Uiutil.java"
+        ]
+      }
+    },
+    {
+      "name": "Characterxttalent",
+      "type": "gui",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "characterxttalent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/network/CharacterxttalentButtonMessage.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/CharacterxttalentScreen.java",
+          "src/main/java/net/mcreator/exmoxl/world/inventory/CharacterxttalentMenu.java"
+        ]
+      },
+      "path": "~/CLASS"
+    },
+    {
+      "name": "Characetexttalents",
+      "type": "overlay",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "characetexttalents",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/client/screens/CharacetexttalentsOverlay.java"
+        ]
+      },
+      "path": "~/CLASS"
+    },
+    {
+      "name": "TalentList",
+      "type": "code",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "talent_list",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/TalentList.java"
+        ]
+      }
+    },
+    {
+      "name": "Charm",
+      "type": "attribute",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/attr"
+    },
+    {
+      "name": "Talent",
+      "type": "code",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "talent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/Talent.java"
+        ]
+      }
+    },
+    {
+      "name": "AddAttrS",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_attr_s",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/AddAttrSProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/attr/gui"
+    },
+    {
+      "name": "ReSpawnTalentSet",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "re_spawn_talent_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/ReSpawnTalentSetProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/CLASS"
+    },
+    {
+      "name": "StoneSign",
+      "type": "block",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exmoxl/blockstates/stone_sign.json",
+          "src/main/resources/assets/exmoxl/models/block/stone_sign.json",
+          "src/main/java/net/mcreator/exmoxl/block/StoneSignBlock.java",
+          "src/main/java/net/mcreator/exmoxl/block/entity/StoneSignBlockEntity.java",
+          "src/main/resources/assets/exmoxl/models/item/stone_sign.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "StoneDungeon",
+      "type": "gui",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_dungeon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/world/inventory/StoneDungeonMenu.java",
+          "src/main/java/net/mcreator/exmoxl/client/gui/StoneDungeonScreen.java",
+          "src/main/java/net/mcreator/exmoxl/network/StoneDungeonButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "ExmoxlConfig",
+      "type": "config",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exmoxl_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/configuration/ExmoxlConfigConfiguration.java"
+        ]
+      }
+    },
+    {
+      "name": "ReDungeons",
+      "type": "command",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "re_dungeons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/ReDungeonsCommand.java"
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "StoneDungeonAddon",
+      "type": "overlay",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_dungeon_addon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/client/screens/StoneDungeonAddonOverlay.java"
+        ]
+      },
+      "path": "~/dungeons"
+    },
+    {
+      "name": "StoneSignYouJiFangKuaiShi",
+      "type": "procedure",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sign_you_ji_fang_kuai_shi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/StoneSignYouJiFangKuaiShiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StoneSignAddDungeonclass",
+      "type": "procedure",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sign_add_dungeonclass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/procedures/StoneSignAddDungeonclassProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/command"
+    },
+    {
+      "name": "StoneSignAddDungeon",
+      "type": "command",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sign_add_dungeon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exmoxl/command/StoneSignAddDungeonCommand.java"
+        ]
+      },
+      "path": "~/command"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "playerxp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "playerllvl",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "playerupxp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "playermaxhealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "playerattack",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "classes",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "bossastring",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "wearonxumiring",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "isserver",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "bossstring",
+      "type": "map",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "bossstringyz",
+      "type": "number",
+      "scope": "map",
+      "value": "50.0"
+    },
+    {
+      "name": "tfd",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "mixins",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "f1chn",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "piao2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "spritnow",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "hd",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "chou",
+      "type": "arraylisti",
+      "scope": "player_persistent",
+      "value": "null"
+    },
+    {
+      "name": "clevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "cnum",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "task",
+      "type": "arraylististring",
+      "scope": "player_persistent",
+      "value": "null"
+    },
+    {
+      "name": "taskfinnishi",
+      "type": "arraylististring",
+      "scope": "player_persistent",
+      "value": "null"
+    },
+    {
+      "name": "tasktitle",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "tasknr",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "taskftitle",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "taskget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "无"
+    },
+    {
+      "name": "taskxz",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "spawnpos",
+      "type": "vectorlist",
+      "scope": "map",
+      "value": "null"
+    },
+    {
+      "name": "spawnhoslevel",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "spawnhosworld",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "lingwu",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Innatetalent",
+      "type": "arraylististring",
+      "scope": "player_persistent",
+      "value": "null"
+    },
+    {
+      "name": "SelectTalent",
+      "type": "arraylististring",
+      "scope": "player_persistent",
+      "value": "null"
+    },
+    {
+      "name": "istianfuSe",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TalentSz2",
+      "type": "arraylisti",
+      "scope": "player_persistent",
+      "value": "null"
+    },
+    {
+      "name": "TalentSz",
+      "type": "mapoo",
+      "scope": "player_persistent",
+      "value": "Collections.emptyMap()"
+    },
+    {
+      "name": "StoneSignIndex",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "SelectDungeon",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "attribute.exmoxl.potential": "潜力",
+      "item.exmoxl.wandao": "弯刀",
+      "entity.exmoxl.as": "As",
+      "item.exmoxl.ironp": "精铁锭",
+      "death.attack.piercedamage": "%1$s 被穿死了",
+      "attribute.exmoxl.knife_aptitude": "刀类兵器资质",
+      "effect.exmoxl.zhenya": "镇压",
+      "attribute.exmoxl.sprit_attack": "灵力伤害",
+      "attribute.exmoxl.long_weapon_aptitude": "长型类兵器资质",
+      "attribute.exmoxl.fire_percent_damage": "火属性百分比伤害加成",
+      "death.attack.wood.item": "%1$s 被 %2$s 使用 %3$s 同化成枯草",
+      "death.attack.waterdamagetype": "%1$s 被巨大的水之力掩埋了",
+      "death.attack.earth_elementaldamage.player": "%1$s 无法摆脱 %2$s 和大地",
+      "gui.exmoxl.taskgui.label_empty1": "title2",
+      "attribute.exmoxl.mentality": "精神力",
+      "item.exmoxl.wrench": "多功能扳手",
+      "attribute.exmoxl.swordaptitude": "剑类资质",
+      "attribute.exmoxl.lightweaponsaptitude": "轻型类资质",
+      "attribute.exmoxl.water_percent_damage": "水属性百分比伤害加成",
+      "item.exmoxl.fazhenentity_spawn_egg": "Fazhenentity Spawn Egg",
+      "attribute.exmoxl.hitrate": "命中率",
+      "item.exmoxl.miscellaneous_dust": "杂尘",
+      "advancements.washtool.descr": "洗涤一次武器词条",
+      "gui.exmoxl.activatigui.tooltip_ci_chu_fang_ru_xing_yan": "此处放入星焰粉",
+      "item.exmoxl.washstone": "洗涤石",
+      "attribute.exmoxl.five_elements": "五行属性",
+      "attribute.exmoxl.axeaptitude": "斧类资质",
+      "death.attack.firedamage.player": "%1$s 没能躲过的火焰 %2$s",
+      "death.attack.goldendamage.item": "%1$s 被 %2$s using %3$s 金元素的致命能量击中，灵魂消散于无尽虚空。",
+      "attribute.exmoxl.charm": "魅力",
+      "attribute.exmoxl.root_bone": "根骨",
+      "gui.exmoxl.characterxttalent.label_zz": "zz",
+      "attribute.exmoxl.remote_weapons_aptitude": "远程类资质",
+      "effect.exmoxl.double_whammy": "§6§l双重打击",
+      "enchantment.exmoxl.bloodthirsty": "§4§l嗜血",
+      "gui.exmoxl.sd.label_aaa": "攻击伤害:",
+      "attribute.exmoxl.evasion": "闪避",
+      "death.attack.goldendamage": "%1$s 被金元素的锋利光芒刺穿，化作一缕金色尘埃",
+      "block.exmoxl.blackfurnacestep": "高炉砖台阶",
+      "death.attack.wood": "%1$s 被木灵力汲取了所有精华",
+      "item.exmoxl.xumi_ring": "§a§l须弥戒指",
+      "gui.exmoxl.characterxttalent.label_name": "name",
+      "gui.exmoxl.taskgui.label_nr": "nr",
+      "attribute.exmoxl.wood_defense": "木属性防御",
+      "attribute.exmoxl.light_weapons_aptitude": "轻型类武器资质",
+      "gui.exmoxl.recasting.tooltip_ci_chu_fang_ru_sheng_ji_ji_pin": "此处放入升级祭品",
+      "item.exmoxl.customitem": "Customitem",
+      "death.attack.firedamage.item": "%1$s 被 %2$s 使用 %3$s 活活焚烧至死 ",
+      "attribute.exmoxl.stick_aptitude": "棍类兵器资质",
+      "attribute.exmoxl.reboundlv": "反射率",
+      "attribute.exmoxl.shortweaponaptitude": "短兵器资质",
+      "gui.exmoxl.taskgui.label_abc": "abc",
+      "attribute.exmoxl.axe_aptitude": "斧类武器资质",
+      "attribute.exmoxl.strength": "力量",
+      "item.exmoxl.threeflame": "三色火",
+      "block.exmoxl.blackfurnacemain": "高炉控制器",
+      "block.exmoxl.stone_sign": "Stone Sign",
+      "item.exmoxl.smelting_stone": "熔炼石",
+      "enchantment.exmoxl.focus_impact": "蓄势猛攻",
+      "death.attack.waterdamagetype.player": "%1$s 在 %2$s 下化作水中的溺尸",
+      "attribute.exmoxl.sword_aptitude": "剑类武器资质",
+      "gui.exmoxl.character_panel.tooltip_nb": "nb",
+      "attribute.exmoxl.critidamage": "暴击伤害",
+      "item.exmoxl.star_flame_powder": "星焰粉",
+      "death.attack.wood.player": "%1$s 未能逃过枯萎的侵蚀 %2$s",
+      "attribute.exmoxl.stickaptitude": "棍类资质",
+      "gui.exmoxl.recasting.tooltip_ci_chu_fang_ru_zhong_zhu_shi": "此处放入重铸石",
+      "attribute.exmoxl.longweaponaptitude": "长兵器资质",
+      "attribute.exmoxl.critdamage": "暴击伤害",
+      "attribute.exmoxl.knifeaptitude": "刀类资质",
+      "key.exmoxl.tw": "人物面板（未完善）",
+      "key.exmoxl.openlottery": "打开抽奖页面",
+      "death.attack.earth_elementaldamage.item": "%1$s 被 %2$s 使用 %3$s 的土元素猛烈伺候下离开了人世.",
+      "attribute.exmoxl.defense": "防御",
+      "gui.exmoxl.activatigui.tooltip_ci_ci_fang_ru_za_chen": "此次放入杂尘",
+      "key.exmoxl.openattrmb": "打开属性面板",
+      "attribute.exmoxl.insight": "悟性",
+      "death.attack.piercedamage.player": "%1$s 没能逃过%2$s的穿透攻击",
+      "entity.exmoxl.fazhenentity": "Fazhenentity",
+      "death.attack.goldendamage.player": "%1$s 被 %2$s 的金元素洪流淹没，失去了生命。",
+      "block.exmoxl.black_furnace": "高炉砖",
+      "attribute.exmoxl.wood_percent_damage": "木属性百分比伤害加成",
+      "item_group.exmoxl.exmoxl": "极墨核心",
+      "item.exmoxl.asksky_2": "§4问天 §6 §l「仙」",
+      "attribute.exmoxl.crit": "暴击率",
+      "attribute.exmoxl.chance": "机缘",
+      "attribute.exmoxl.spirit": "灵力上限",
+      "item.exmoxl.dnz": "东南枝",
+      "attribute.exmoxl.intelligence": "智力",
+      "attribute.exmoxl.atomictankaptitude": "重型类资质",
+      "attribute.exmoxl.fire_defense": "火属性防御",
+      "death.attack.waterdamagetype.item": "%1$s 被 %2$s 使用 %3$s 以水洗髓",
+      "attribute.exmoxl.wood_damage": "木属性伤害",
+      "effect.exmoxl.regper": "百分比生命恢复",
+      "advancements.washtool.title": "§6§l何方在此渡劫！",
+      "gui.exmoxl.characterxttalent.label_empty": "",
+      "gui.exmoxl.taskgui.label_empty": "title",
+      "effect.exmoxl.yishang": "易伤",
+      "attribute.exmoxl.atomic_tank_aptitude": "重型类武器资质",
+      "attribute.exmoxl.fire_a_damage": "火属性伤害",
+      "block.exmoxl.recasting_table": "重铸台",
+      "attribute.exmoxl.mianshan": "免伤",
+      "attribute.exmoxl.pierce": "穿透伤害",
+      "block.exmoxl.weaworkbeach": "武器工作台",
+      "attribute.exmoxl.water_damage": "水属性伤害",
+      "attribute.exmoxl.rebound": "反射",
+      "gui.exmoxl.activatigui.tooltip_ci_chu_fang_ru_wu_qi": "此处放入武器",
+      "death.attack.piercedamage.item": "%1$s  使用 %3$s 穿透了 %2$s ",
+      "config.exmoxl.exmoxl_config": "exmoxl",
+      "attribute.exmoxl.short_weapon_aptitude": "短型类兵器资质",
+      "gui.exmoxl.stone_dungeon.label_empty": "",
+      "attribute.exmoxl.agile": "敏捷",
+      "attribute.exmoxl.remoteweaponsaptitude": "远程武器资质",
+      "death.attack.firedamage": "%1$s 被烈火吞没了",
+      "death.attack.earth_elementaldamage": "%1$s 被土元素的尖锐石刺刺穿，鲜血染红了大地。",
+      "item.exmoxl.asksky": "§6§l问天 §7「凡」",
+      "attribute.exmoxl.water_defense": "水属性防御",
+      "block.exmoxl.activator": "活化器"
+    },
+    "zh_cn": {
+      "attribute.exmoxl.potential": "潜力",
+      "item.exmoxl.wandao": "弯刀",
+      "entity.exmoxl.as": "As",
+      "item.exmoxl.ironp": "精铁锭",
+      "death.attack.piercedamage": "%1$s 被穿死了",
+      "attribute.exmoxl.knife_aptitude": "刀类兵器资质",
+      "effect.exmoxl.zhenya": "镇压",
+      "attribute.exmoxl.sprit_attack": "灵力伤害",
+      "attribute.exmoxl.long_weapon_aptitude": "长型类兵器资质",
+      "attribute.exmoxl.fire_percent_damage": "火属性百分比伤害加成",
+      "death.attack.wood.item": "%1$s 被 %2$s 使用 %3$s 同化成枯草",
+      "death.attack.waterdamagetype": "%1$s 被巨大的水之力掩埋了",
+      "death.attack.earth_elementaldamage.player": "%1$s 无法摆脱 %2$s 和大地",
+      "gui.exmoxl.taskgui.label_empty1": "title2",
+      "attribute.exmoxl.mentality": "精神力",
+      "item.exmoxl.wrench": "多功能扳手",
+      "attribute.exmoxl.swordaptitude": "剑类资质",
+      "attribute.exmoxl.lightweaponsaptitude": "轻型类资质",
+      "attribute.exmoxl.water_percent_damage": "水属性百分比伤害加成",
+      "item.exmoxl.fazhenentity_spawn_egg": "Fazhenentity Spawn Egg",
+      "attribute.exmoxl.hitrate": "命中率",
+      "item.exmoxl.miscellaneous_dust": "杂尘",
+      "advancements.washtool.descr": "洗涤一次武器词条",
+      "gui.exmoxl.activatigui.tooltip_ci_chu_fang_ru_xing_yan": "此处放入星焰粉",
+      "item.exmoxl.washstone": "洗涤石",
+      "attribute.exmoxl.five_elements": "五行属性",
+      "attribute.exmoxl.axeaptitude": "斧类资质",
+      "death.attack.firedamage.player": "%1$s 没能躲过的火焰 %2$s",
+      "death.attack.goldendamage.item": "%1$s 被 %2$s using %3$s 金元素的致命能量击中，灵魂消散于无尽虚空。",
+      "attribute.exmoxl.charm": "魅力",
+      "attribute.exmoxl.root_bone": "根骨",
+      "gui.exmoxl.characterxttalent.label_zz": "zz",
+      "attribute.exmoxl.remote_weapons_aptitude": "远程类资质",
+      "effect.exmoxl.double_whammy": "§6§l双重打击",
+      "enchantment.exmoxl.bloodthirsty": "§4§l嗜血",
+      "gui.exmoxl.sd.label_aaa": "攻击伤害:",
+      "attribute.exmoxl.evasion": "闪避",
+      "death.attack.goldendamage": "%1$s 被金元素的锋利光芒刺穿，化作一缕金色尘埃",
+      "block.exmoxl.blackfurnacestep": "高炉砖台阶",
+      "death.attack.wood": "%1$s 被木灵力汲取了所有精华",
+      "item.exmoxl.xumi_ring": "§a§l须弥戒指",
+      "gui.exmoxl.characterxttalent.label_name": "name",
+      "gui.exmoxl.taskgui.label_nr": "nr",
+      "attribute.exmoxl.wood_defense": "木属性防御",
+      "attribute.exmoxl.light_weapons_aptitude": "轻型类武器资质",
+      "gui.exmoxl.recasting.tooltip_ci_chu_fang_ru_sheng_ji_ji_pin": "此处放入升级祭品",
+      "item.exmoxl.customitem": "Customitem",
+      "death.attack.firedamage.item": "%1$s 被 %2$s 使用 %3$s 活活焚烧至死 ",
+      "attribute.exmoxl.stick_aptitude": "棍类兵器资质",
+      "attribute.exmoxl.reboundlv": "反射率",
+      "attribute.exmoxl.shortweaponaptitude": "短兵器资质",
+      "gui.exmoxl.taskgui.label_abc": "abc",
+      "attribute.exmoxl.axe_aptitude": "斧类武器资质",
+      "attribute.exmoxl.strength": "力量",
+      "item.exmoxl.threeflame": "三色火",
+      "block.exmoxl.blackfurnacemain": "高炉控制器",
+      "block.exmoxl.stone_sign": "地牢石碑",
+      "item.exmoxl.smelting_stone": "熔炼石",
+      "enchantment.exmoxl.focus_impact": "蓄势猛攻",
+      "death.attack.waterdamagetype.player": "%1$s 在 %2$s 下化作水中的溺尸",
+      "attribute.exmoxl.sword_aptitude": "剑类武器资质",
+      "gui.exmoxl.character_panel.tooltip_nb": "nb",
+      "attribute.exmoxl.critidamage": "暴击伤害",
+      "item.exmoxl.star_flame_powder": "星焰粉",
+      "death.attack.wood.player": "%1$s 未能逃过枯萎的侵蚀 %2$s",
+      "attribute.exmoxl.stickaptitude": "棍类资质",
+      "gui.exmoxl.recasting.tooltip_ci_chu_fang_ru_zhong_zhu_shi": "此处放入重铸石",
+      "attribute.exmoxl.longweaponaptitude": "长兵器资质",
+      "attribute.exmoxl.critdamage": "暴击伤害",
+      "attribute.exmoxl.knifeaptitude": "刀类资质",
+      "key.exmoxl.tw": "Tw",
+      "key.exmoxl.openlottery": "Openlottery",
+      "death.attack.earth_elementaldamage.item": "%1$s 被 %2$s 使用 %3$s 的土元素猛烈伺候下离开了人世.",
+      "attribute.exmoxl.defense": "防御",
+      "gui.exmoxl.activatigui.tooltip_ci_ci_fang_ru_za_chen": "此次放入杂尘",
+      "key.exmoxl.openattrmb": "Openattrmb",
+      "attribute.exmoxl.insight": "悟性",
+      "death.attack.piercedamage.player": "%1$s 没能逃过%2$s的穿透攻击",
+      "entity.exmoxl.fazhenentity": "Fazhenentity",
+      "death.attack.goldendamage.player": "%1$s 被 %2$s 的金元素洪流淹没，失去了生命。",
+      "block.exmoxl.black_furnace": "高炉砖",
+      "attribute.exmoxl.wood_percent_damage": "木属性百分比伤害加成",
+      "item_group.exmoxl.exmoxl": "极墨核心",
+      "item.exmoxl.asksky_2": "§4问天 §6 §l「仙」",
+      "attribute.exmoxl.crit": "暴击率",
+      "attribute.exmoxl.chance": "机缘",
+      "attribute.exmoxl.spirit": "灵力上限",
+      "item.exmoxl.dnz": "东南枝",
+      "attribute.exmoxl.intelligence": "智力",
+      "attribute.exmoxl.atomictankaptitude": "重型类资质",
+      "attribute.exmoxl.fire_defense": "火属性防御",
+      "death.attack.waterdamagetype.item": "%1$s 被 %2$s 使用 %3$s 以水洗髓",
+      "attribute.exmoxl.wood_damage": "木属性伤害",
+      "effect.exmoxl.regper": "百分比生命恢复",
+      "advancements.washtool.title": "§6§l何方在此渡劫！",
+      "gui.exmoxl.characterxttalent.label_empty": "",
+      "gui.exmoxl.taskgui.label_empty": "title",
+      "effect.exmoxl.yishang": "易伤",
+      "attribute.exmoxl.atomic_tank_aptitude": "重型类武器资质",
+      "attribute.exmoxl.fire_a_damage": "火属性伤害",
+      "block.exmoxl.recasting_table": "重铸台",
+      "attribute.exmoxl.mianshan": "免伤",
+      "attribute.exmoxl.pierce": "穿透伤害",
+      "block.exmoxl.weaworkbeach": "武器工作台",
+      "attribute.exmoxl.water_damage": "水属性伤害",
+      "attribute.exmoxl.rebound": "反射",
+      "gui.exmoxl.activatigui.tooltip_ci_chu_fang_ru_wu_qi": "此处放入武器",
+      "death.attack.piercedamage.item": "%1$s  使用 %3$s 穿透了 %2$s ",
+      "config.exmoxl.exmoxl_config": "exmoxl",
+      "attribute.exmoxl.short_weapon_aptitude": "短型类兵器资质",
+      "gui.exmoxl.stone_dungeon.label_empty": "",
+      "attribute.exmoxl.agile": "敏捷",
+      "attribute.exmoxl.remoteweaponsaptitude": "远程武器资质",
+      "death.attack.firedamage": "%1$s 被烈火吞没了",
+      "death.attack.earth_elementaldamage": "%1$s 被土元素的尖锐石刺刺穿，鲜血染红了大地。",
+      "item.exmoxl.asksky": "§6§l问天 §7「凡」",
+      "attribute.exmoxl.water_defense": "水属性防御",
+      "block.exmoxl.activator": "活化器"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "command",
+        "children": []
+      },
+      {
+        "name": "attr",
+        "children": [
+          {
+            "name": "gui",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "trammels",
+        "children": []
+      },
+      {
+        "name": "rec",
+        "children": []
+      },
+      {
+        "name": "enchanment",
+        "children": []
+      },
+      {
+        "name": "curios",
+        "children": []
+      },
+      {
+        "name": "CLASS",
+        "children": []
+      },
+      {
+        "name": "skill",
+        "children": []
+      },
+      {
+        "name": "system",
+        "children": []
+      },
+      {
+        "name": "repice",
+        "children": []
+      },
+      {
+        "name": "item",
+        "children": []
+      },
+      {
+        "name": "block",
+        "children": []
+      },
+      {
+        "name": "Lottery",
+        "children": []
+      },
+      {
+        "name": "weapon",
+        "children": [
+          {
+            "name": "randomtool",
+            "children": []
+          },
+          {
+            "name": "effect",
+            "children": []
+          },
+          {
+            "name": "weaworkbeach",
+            "children": []
+          },
+          {
+            "name": "aptitude",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "mobattr",
+        "children": [
+          {
+            "name": "hos",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "boss",
+        "children": []
+      },
+      {
+        "name": "talent",
+        "children": []
+      },
+      {
+        "name": "task",
+        "children": []
+      },
+      {
+        "name": "lingwu",
+        "children": []
+      },
+      {
+        "name": "armor",
+        "children": []
+      },
+      {
+        "name": "dungeons",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "exmoxl",
+    "modName": "EXMOXL",
+    "version": "0.0.2.6",
+    "author": "canyuesama, MCreator",
+    "websiteURL": "https://www.mcmod.cn/class/14011.html,https://www.curseforge.com/minecraft/mc-mods/exmoxl",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": false,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "apoatt",
+      "jade",
+      "geckolib",
+      "fanjiawuyu",
+      "attfix",
+      "architectury",
+      "playeranimator",
+      "jei",
+      "cloth-config",
+      "l2ser",
+      "kleidersplayerrenderer",
+      "pehkui",
+      "crafttweaker",
+      "l2li",
+      "l2da",
+      "l2kuo",
+      "classicbar",
+      "patchouli",
+      "embeddium",
+      "l2ho",
+      "placebo",
+      "particlepresets",
+      "apoth"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.exmoxl",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

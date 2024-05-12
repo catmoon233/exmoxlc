@@ -1,0 +1,190 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 168,
+    "height": 166,
+    "inventoryOffsetX": -1,
+    "inventoryOffsetY": 2,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:MiscellaneousDust"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 177,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:StarFlamePowder"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 177,
+          "y": 62
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 258,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Activatiguiclaa1"
+          },
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ci_ci_fang_ru_za_chen",
+          "text": {
+            "fixedValue": "此次放入杂尘"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 177,
+          "y": 98
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ci_chu_fang_ru_xing_yan",
+          "text": {
+            "fixedValue": "此处放入星焰粉"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 177,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_activatiguit",
+          "text": {
+            "fixedValue": "",
+            "name": "Activatiguit"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_activatiguit_2",
+          "text": {
+            "fixedValue": "",
+            "name": "Activatiguit2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ci_chu_fang_ru_wu_qi",
+          "text": {
+            "fixedValue": "此处放入武器"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "jiantou.png",
+          "use1Xscale": false,
+          "x": 218,
+          "y": 83
+        }
+      }
+    ],
+    "onTick": {
+      "name": "ActivatiguiGaiGUIDaKaiShiMeiKeFaSheng"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

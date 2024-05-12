@@ -1,0 +1,16 @@
+Java Launcher: D:\ABOUTMC\MCREATOR\versions\MCreator20234\jdk\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\Administrator\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\framedblocks-441647\4633554\2157767998ae000b4164fb79decade334aaf87cd\framedblocks-441647-4633554.jar, --output, C:\Users\Administrator\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\framedblocks-441647\4633554_mapped_official_1.20.1\framedblocks-441647-4633554_mapped_official_1.20.1.jar, --mcp, C:\Users\Administrator\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - C:\Users\Administrator\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.2\installertools-1.3.2-fatjar.jar
+Working directory: D:\ABOUTMC\EXMOXL\build\_RenameSrg2Mcp_-1209206772
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\Administrator\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\framedblocks-441647\4633554\2157767998ae000b4164fb79decade334aaf87cd\framedblocks-441647-4633554.jar
+Output: C:\Users\Administrator\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\framedblocks-441647\4633554_mapped_official_1.20.1\framedblocks-441647-4633554_mapped_official_1.20.1.jar
+MCP:    C:\Users\Administrator\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Stripped Manifest of sha digests
+Process complete

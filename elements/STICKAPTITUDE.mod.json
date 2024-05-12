@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "attribute",
+  "definition": {
+    "description": "棍类资质",
+    "minValue": 0.0,
+    "maxValue": 1.0E8,
+    "defaultValue": 0.0,
+    "isPersistent": true,
+    "entities": [
+      {
+        "value": "EntityAgeable"
+      },
+      {
+        "value": "EntityPlayer"
+      }
+    ]
+  }
+}

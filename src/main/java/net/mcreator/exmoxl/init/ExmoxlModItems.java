@@ -56,6 +56,7 @@ public class ExmoxlModItems {
 	public static final RegistryObject<Item> WEAWORKBEACH = block(ExmoxlModBlocks.WEAWORKBEACH);
 	public static final RegistryObject<Item> DNZ = REGISTRY.register("dnz", () -> new DnzItem());
 	public static final RegistryObject<Item> ASKSKY_2 = REGISTRY.register("asksky_2", () -> new Asksky2Item());
+	public static final RegistryObject<Item> STONE_SIGN = block(ExmoxlModBlocks.STONE_SIGN);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

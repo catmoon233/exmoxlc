@@ -13,12 +13,14 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.exmoxl.client.gui.WeawordkbeachguiScreen;
 import net.mcreator.exmoxl.client.gui.TaskguiScreen;
+import net.mcreator.exmoxl.client.gui.StoneDungeonScreen;
 import net.mcreator.exmoxl.client.gui.RecastingScreen;
 import net.mcreator.exmoxl.client.gui.LotteryweaponScreen;
 import net.mcreator.exmoxl.client.gui.LotteryshiScreen;
 import net.mcreator.exmoxl.client.gui.LotterydanScreen;
 import net.mcreator.exmoxl.client.gui.LotteryMainScreen;
 import net.mcreator.exmoxl.client.gui.ChooseclassguiScreen;
+import net.mcreator.exmoxl.client.gui.CharacterxttalentScreen;
 import net.mcreator.exmoxl.client.gui.CharacterPanelScreen;
 import net.mcreator.exmoxl.client.gui.AttrmbScreen;
 import net.mcreator.exmoxl.client.gui.ActivatiguiScreen;
@@ -39,6 +41,8 @@ public class ExmoxlModScreens {
 			MenuScreens.register(ExmoxlModMenus.LOTTERYDAN.get(), LotterydanScreen::new);
 			MenuScreens.register(ExmoxlModMenus.LOTTERYSHI.get(), LotteryshiScreen::new);
 			MenuScreens.register(ExmoxlModMenus.TASKGUI.get(), TaskguiScreen::new);
+			MenuScreens.register(ExmoxlModMenus.CHARACTERXTTALENT.get(), CharacterxttalentScreen::new);
+			MenuScreens.register(ExmoxlModMenus.STONE_DUNGEON.get(), StoneDungeonScreen::new);
 		});
 	}
 }

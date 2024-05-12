@@ -95,7 +95,32 @@ repositories {
 }
 
 dependencies {
+  implementation fg.deobf("curse.maven:minecraft-comes-alive-reborn-535291:5104317")
+}
+
+
+repositories {
+  maven {
+      url = 'https://cursemaven.com/'
+  }
+}
+
+dependencies {
   implementation fg.deobf("curse.maven:attributefix-280510:4911084")
+}
+
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+   compileOnly fg.deobf("curse.maven:architectury-forge-419699:4663010")
+   runtimeOnly fg.deobf("curse.maven:architectury-forge-419699:4663010")
 }
 
 
@@ -349,8 +374,8 @@ repositories {
     }
 }
 dependencies {
-   compileOnly fg.deobf("curse.maven:mpp-forge-986014:5175633")
-   runtimeOnly fg.deobf("curse.maven:mpp-forge-986014:5175633")
+   compileOnly fg.deobf("curse.maven:mpp-forge-986014:5262463")
+   runtimeOnly fg.deobf("curse.maven:mpp-forge-986014:5262463")
 }
 
 

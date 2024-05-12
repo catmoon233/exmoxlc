@@ -1,0 +1,124 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": ""
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "backround.png",
+          "use1Xscale": true,
+          "x": 15,
+          "y": 8
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "Selfmodle"
+          },
+          "scale": 20,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 33,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "backround.png",
+          "use1Xscale": false,
+          "x": 312,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_zz",
+          "text": {
+            "fixedValue": "zz"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_name",
+          "text": {
+            "fixedValue": "name"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 17
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_backround2",
+          "image": "backround2.png",
+          "hoveredImage": "backround2.png",
+          "onClick": {
+            "name": "Rect1"
+          },
+          "x": 33,
+          "y": 62
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_enterp",
+          "image": "enter.p.png",
+          "hoveredImage": "enter.w.png",
+          "onClick": {
+            "name": "Weaponinfomation"
+          },
+          "x": 330,
+          "y": 206
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

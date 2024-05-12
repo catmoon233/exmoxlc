@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "attribute",
+  "definition": {
+    "description": "火属性百分比伤害加成",
+    "minValue": 0.0,
+    "maxValue": 1.0E8,
+    "defaultValue": 0.0,
+    "isPersistent": true,
+    "entities": [
+      {
+        "value": "EntityPlayer"
+      },
+      {
+        "value": "EntityMob"
+      }
+    ]
+  }
+}

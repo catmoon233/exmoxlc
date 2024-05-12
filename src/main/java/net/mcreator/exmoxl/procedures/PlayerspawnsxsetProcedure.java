@@ -10,6 +10,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.exmoxl.network.ExmoxlModVariables;
+import net.mcreator.exmoxl.configuration.ExmoxlConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -30,10 +31,14 @@ public class PlayerspawnsxsetProcedure {
 		if (entity == null)
 			return;
 		if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getModifier(UUID.fromString("01d39f67-32f1-420d-b0fb-76d884db52e9")) != null)) {
-			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).hasModifier((new AttributeModifier(UUID.fromString("01d39f67-32f1-420d-b0fb-76d884db52e9"), "\u521D\u59CB\u751F\u547D",
-					((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playermaxhealth - 20), AttributeModifier.Operation.ADDITION)))))
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).addPermanentModifier((new AttributeModifier(UUID.fromString("01d39f67-32f1-420d-b0fb-76d884db52e9"), "\u521D\u59CB\u751F\u547D",
-						((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playermaxhealth - 20), AttributeModifier.Operation.ADDITION)));
+			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
+					.hasModifier((new AttributeModifier(UUID.fromString("01d39f67-32f1-420d-b0fb-76d884db52e9"), "\u521D\u59CB\u751F\u547D",
+							(((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playermaxhealth - (100 - (double) ExmoxlConfigConfiguration.DEFUALTHELTH.get())) - 20),
+							AttributeModifier.Operation.ADDITION)))))
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
+						.addPermanentModifier((new AttributeModifier(UUID.fromString("01d39f67-32f1-420d-b0fb-76d884db52e9"), "\u521D\u59CB\u751F\u547D",
+								(((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playermaxhealth - (100 - (double) ExmoxlConfigConfiguration.DEFUALTHELTH.get())) - 20),
+								AttributeModifier.Operation.ADDITION)));
 		}
 		if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getModifier(UUID.fromString("01d39f67-32f1-420d-b0fb-76d884db52e9")) != null)) {
 			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).hasModifier((new AttributeModifier(UUID.fromString("01d39f67-32f1-420d-b0fb-76d884db52e9"), "\u521D\u59CB\u653B\u51FB",

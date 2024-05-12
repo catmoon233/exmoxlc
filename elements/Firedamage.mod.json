@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s 被烈火吞没了",
+    "itemDeathMessage": "%1$s 被 %2$s 使用 %3$s 活活焚烧至死 ",
+    "playerDeathMessage": "%1$s 没能躲过的火焰 %2$s"
+  }
+}

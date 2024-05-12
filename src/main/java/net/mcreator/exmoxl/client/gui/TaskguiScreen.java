@@ -1,4 +1,5 @@
 package net.mcreator.exmoxl.client.gui;
+import net.minecraft.client.gui.Font;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -17,6 +18,7 @@ import net.mcreator.exmoxl.ExmoxlMod;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
+import java.util.logging.Logger;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -86,35 +88,39 @@ public class TaskguiScreen extends AbstractContainerScreen<TaskguiMenu> {
         int nrline;
         List<String> wrappedLines = new ArrayList<>();
         String xxnr = talknr;
-        int maxLineWidth = 100; // 选择一个合适的最大宽度值
-
-        for (int index = 0; index * maxLineWidth < font.width(xxnr); index++) {
+        int maxLineWidth = 250; // 选择一个合适的最大宽度值
+        int indexm = (int) Math.floor(font.width(xxnr)/maxLineWidth);
+        // boolean isrenderlable1 =false;
+        for (int i =0; i < indexm ;i++) {
             xxnr = font.plainSubstrByWidth(talknr, maxLineWidth);
-            wrappedLines.add(xxnr);
-            xxnr = generateTextC(xxnr,talknr);
-            talknr = xxnr;
+            talknr = talknr.substring(xxnr.length());
+            guiGraphics.drawString(this.font, Component.literal(xxnr), -64, 34 + font.lineHeight*i, -12829636, false);
+            //ExmoxlMod.LOGGER.debug(talknr);
+            //   isrenderlable1 = true;
+
         }
+        //if(isrenderlable1){
+        guiGraphics.drawString(this.font, Component.literal(talknr), -64, 34 + font.lineHeight*indexm, -12829636, false);
+        //isrenderlable1 = false;
+        // }
+
         List<String> pl;
         pl = (entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).task;
-         for (int index = 0; index < pl.size(); index++)System.out.printf(pl.get(index));
+      //  for (int index = 0; index < pl.size(); index++)System.out.printf(pl.get(index));
         for (int index = 0; index < 6; index++) {
             if(pl.size()>index){
                 guiGraphics.drawString(this.font, Component.literal(pl.get(index)), -190, -11  +36*index, -12829636, false);
 
             }
         }
-        int lineint=0;
-        for (String wrappedLine : wrappedLines) {
-        	System.out.printf(wrappedLine);
-            lineint++;
-            guiGraphics.drawString(this.font, Component.literal(wrappedLine), -64, 34 + font.lineHeight*lineint, -12829636, false);
-        }
-
-
-
-
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().scale(2,2,0);
+       // guiGraphics.pose().translate(5,5,5);
         guiGraphics.drawString(this.font, Component.literal((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).tasktitle), -64, -2, -12829636, false);
+        guiGraphics.pose().scale(1,1,0);
+
         guiGraphics.drawString(this.font, Component.literal((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).taskftitle), -64, 7, -12829636, false);
+        guiGraphics.pose().popPose();
     }
 
     public static String generateTextC(String a, String b) {

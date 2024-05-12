@@ -39,10 +39,13 @@ public class GettasknrProcedure {
         LevelAccessor le = (LevelAccessor) (entity.level());
         if (!le.isClientSide()) {
             File taskn = new File("");
-            String filename = "";
+            String filename =((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).taskget);
+
             com.google.gson.JsonObject jo = new com.google.gson.JsonObject();
-            if (!((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).taskget).equals("")) {
-                taskn = new File((FMLPaths.GAMEDIR.get().toString() + "/tasks"), File.separator + ((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).taskget + ".json"));
+            if (
+                    !(filename.equals("无"))
+            ) {
+                taskn = new File((FMLPaths.GAMEDIR.get().toString() + "/tasks"), File.separator + filename + ".json");
                 {
                     try {
                         BufferedReader bufferedReader = new BufferedReader(new FileReader(taskn));

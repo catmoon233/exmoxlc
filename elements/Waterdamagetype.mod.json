@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.2,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s 被巨大的水之力掩埋了",
+    "itemDeathMessage": "%1$s 被 %2$s 使用 %3$s 以水洗髓",
+    "playerDeathMessage": "%1$s 在 %2$s 下化作水中的溺尸"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "washtool": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

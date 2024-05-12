@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s 被土元素的尖锐石刺刺穿，鲜血染红了大地。",
+    "itemDeathMessage": "%1$s 被 %2$s 使用 %3$s 的土元素猛烈伺候下离开了人世.",
+    "playerDeathMessage": "%1$s 无法摆脱 %2$s 和大地"
+  }
+}

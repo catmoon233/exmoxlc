@@ -1,0 +1,7 @@
+{
+  "_fv": 57,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"MCItemBlock\" id=\"bs\">bs</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_open_gui\"><field name=\"guiname\">Weawordkbeachgui</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"coord_y\"></block></value><value name=\"z\"><block type=\"coord_z\"></block></value></block></next></block><block type=\"variables_set_blockstate\" x=\"37\" y=\"202\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:bs</field><value name=\"VAL\"><block type=\"blockstate_from_deps\"></block></value><next><block type=\"controls_if\"><mutation else=\"1\"></mutation><value name=\"IF0\"><block type=\"entity_issneaking\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><statement name=\"DO0\"><block type=\"java_code\"><field name=\"CODE\">/*code*/</field></block></statement></block></next></block><block type=\"controls_if\" x=\"341\" y=\"367\"></block></xml>"
+  }
+}

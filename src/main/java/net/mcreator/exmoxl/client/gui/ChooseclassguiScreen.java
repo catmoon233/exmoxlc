@@ -1,5 +1,6 @@
 package net.mcreator.exmoxl.client.gui;
 
+import net.mcreator.exmoxl.network.ExmoxlModVariables;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -51,18 +52,23 @@ public class ChooseclassguiScreen extends AbstractContainerScreen<Chooseclassgui
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("exmoxl:textures/screens/xbj.png"), this.leftPos + -199, this.topPos + -20, 0, 0, 400, 200, 400, 200);
+		guiGraphics.blit(new ResourceLocation("exmoxl:textures/screens/xbj.png"), 0, 0, 0, 0, width, height, width, height);
 
 		RenderSystem.disableBlend();
 	}
 
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
-		if (key == 256) {
-			this.minecraft.player.closeContainer();
-			return true;
-		}
-		return super.keyPressed(key, b, c);
+//		if (!((entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).classes == 0)) {
+//
+//
+//			if (key == 256) {
+//				this.minecraft.player.closeContainer();
+//				return true;
+//			}
+//			return super.keyPressed(key, b, c);
+//		}
+	return  false;
 	}
 
 	@Override
@@ -76,6 +82,7 @@ public class ChooseclassguiScreen extends AbstractContainerScreen<Chooseclassgui
 
 	@Override
 	public void onClose() {
+
 		super.onClose();
 	}
 

@@ -54,7 +54,7 @@ public class CharacterPanelScreen extends AbstractContainerScreen<CharacterPanel
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("exmoxl:textures/screens/mianban1plus.png"), this.leftPos + -199, this.topPos + 7, 0, 0, 400, 160, 400, 160);
+		guiGraphics.blit(new ResourceLocation("exmoxl:textures/screens/mianban1plus.png"), this.leftPos + -199, this.topPos + 16, 0, 0, 400, 160, 400, 160);
 
 		RenderSystem.disableBlend();
 	}

@@ -77,7 +77,17 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/mpp-forge-986014/5175633_mapped_official_1.20.1/mpp-forge-986014-5175633_mapped_official_1.20.1.jar">
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/mpp-forge-986014/5262463_mapped_official_1.20.1/mpp-forge-986014-5262463_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/canyuesama/.mcreator/gradle/caches/modules-2/files-2.1/org.json/json/20210307/cf1c333bedf1d9d554b5c3990379b3180c4b0906/json-20210307-sources.jar" kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/modules-2/files-2.1/org.json/json/20210307/528c8df3757e8bcf151817b1d7b9b434f6aa08d5/json-20210307.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/apothic-attributes-898963/5209162_mapped_official_1.20.1/apothic-attributes-898963-5209162_mapped_official_1.20.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -87,7 +97,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/attributefix-280510/4911084_mapped_official_1.20.1/attributefix-280510-4911084_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/dev/kosmx/player-anim/player-animation-lib-forge/1.0.2-rc1+1.20_mapped_official_1.20.1/player-animation-lib-forge-1.0.2-rc1+1.20_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/dev/kosmx/player-anim/player-animation-lib-forge/1.0.2-rc1+1.20_mapped_official_1.20.1/player-animation-lib-forge-1.0.2-rc1+1.20_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/dev/xkmc/l2serial/l2serial/1.2.2_mapped_official_1.20.1/l2serial-1.2.2_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/kleidersplayerrenderer-682065/4783309_mapped_official_1.20.1/kleidersplayerrenderer-682065-4783309_mapped_official_1.20.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -97,7 +122,17 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/dev/xkmc/l2damagetracker/l2damagetracker/0.3.7_mapped_official_1.20.1/l2damagetracker-0.3.7_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/l2-complements-758349/5073093_mapped_official_1.20.1/l2-complements-758349-5073093_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/classic-bars-317642/5134370_mapped_official_1.20.1/classic-bars-317642-5134370_mapped_official_1.20.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -107,7 +142,17 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1.jar">
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/placebo-283644/5098182_mapped_official_1.20.1/placebo-283644-5098182_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/canyuesama/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/apotheosis-313970/5209354_mapped_official_1.20.1/apotheosis-313970-5209354_mapped_official_1.20.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="D:/ABOUTMC/EXMOXL/build/fg_cache/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-sources.jar" kind="lib" path="D:/ABOUTMC/EXMOXL/build/fg_cache/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

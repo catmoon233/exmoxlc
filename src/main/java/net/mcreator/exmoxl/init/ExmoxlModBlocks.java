@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.exmoxl.block.WeaworkbeachBlock;
+import net.mcreator.exmoxl.block.StoneSignBlock;
 import net.mcreator.exmoxl.block.RecastingTableBlock;
 import net.mcreator.exmoxl.block.BlackfurnacestepBlock;
 import net.mcreator.exmoxl.block.BlackfurnacemainBlock;
@@ -26,4 +27,5 @@ public class ExmoxlModBlocks {
 	public static final RegistryObject<Block> BLACKFURNACEMAIN = REGISTRY.register("blackfurnacemain", () -> new BlackfurnacemainBlock());
 	public static final RegistryObject<Block> BLACKFURNACESTEP = REGISTRY.register("blackfurnacestep", () -> new BlackfurnacestepBlock());
 	public static final RegistryObject<Block> WEAWORKBEACH = REGISTRY.register("weaworkbeach", () -> new WeaworkbeachBlock());
+	public static final RegistryObject<Block> STONE_SIGN = REGISTRY.register("stone_sign", () -> new StoneSignBlock());
 }

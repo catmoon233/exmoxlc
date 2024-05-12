@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "net/mcreator/exmoxl/mixins/ItemmixinMixin": {
+      "getAttributeModifiers": "Lnet/minecraft/world/item/ItemStack;m_41638_(Lnet/minecraft/world/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap;"
+    }
+  },
+  "data": {
+    "searge": {
+      "net/mcreator/exmoxl/mixins/ItemmixinMixin": {
+        "getAttributeModifiers": "Lnet/minecraft/world/item/ItemStack;m_41638_(Lnet/minecraft/world/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap;"
+      }
+    }
+  }
+}

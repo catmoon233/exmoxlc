@@ -16,7 +16,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.exmoxl.entity.MagicaEntity;
 import net.mcreator.exmoxl.entity.FazhenentityEntity;
 import net.mcreator.exmoxl.entity.Asksky2flysworldEntity;
 import net.mcreator.exmoxl.entity.AsEntity;
@@ -29,8 +28,6 @@ public class ExmoxlModEntities {
 			EntityType.Builder.<AsEntity>of(AsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AsEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<MagicaEntity>> MAGICA = register("projectile_magica",
-			EntityType.Builder.<MagicaEntity>of(MagicaEntity::new, MobCategory.MISC).setCustomClientFactory(MagicaEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FazhenentityEntity>> FAZHENENTITY = register("fazhenentity", EntityType.Builder.<FazhenentityEntity>of(FazhenentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FazhenentityEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<Asksky2flysworldEntity>> ASKSKY_2FLYSWORLD = register("projectile_asksky_2flysworld", EntityType.Builder.<Asksky2flysworldEntity>of(Asksky2flysworldEntity::new, MobCategory.MISC)

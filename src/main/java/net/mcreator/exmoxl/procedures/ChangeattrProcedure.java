@@ -1,4 +1,5 @@
 package net.mcreator.exmoxl.procedures;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -16,11 +17,10 @@ import java.util.*;
 
 import java.util.Optional;
 
+import static org.json.XMLTokener.entity;
 
 
-
-
-   public  class ChangeattrProcedure {
+public  class ChangeattrProcedure {
     @SubscribeEvent
     public static void addbaseattributes(ItemAttributeModifierEvent event) {
         List removelist = new ArrayList<>();
@@ -272,6 +272,12 @@ import java.util.Optional;
             return new AttributeModifier(uuid, modifierName, amount, operation);
         }
         return null; // 如果缺少必要信息，则返回null
+    }
+    public static void EntityAddAttr(LivingEntity livingEntity,UUID uuid,String name,double amount,Attribute attribute,AttributeModifier.Operation operation){
+        if (!(Objects.requireNonNull(livingEntity.getAttribute(attribute))
+                .hasModifier((new AttributeModifier(uuid, name ,amount, operation)))))
+           Objects.requireNonNull(livingEntity.getAttribute(attribute))
+                    .addPermanentModifier((new AttributeModifier(uuid, name, amount, operation)));
     }
 
 

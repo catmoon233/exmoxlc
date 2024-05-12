@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s 被金元素的锋利光芒刺穿，化作一缕金色尘埃",
+    "itemDeathMessage": "%1$s 被 %2$s using %3$s 金元素的致命能量击中，灵魂消散于无尽虚空。",
+    "playerDeathMessage": "%1$s 被 %2$s 的金元素洪流淹没，失去了生命。"
+  }
+}

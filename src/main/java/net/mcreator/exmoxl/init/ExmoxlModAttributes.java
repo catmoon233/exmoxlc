@@ -60,6 +60,7 @@ public class ExmoxlModAttributes {
 	public static final RegistryObject<Attribute> WOODPERCENTDAMAGE = ATTRIBUTES.register("wood_percent_damage", () -> (new RangedAttribute("attribute." + ExmoxlMod.MODID + ".wood_percent_damage", 0, 0, 100000000)).setSyncable(true));
 	public static final RegistryObject<Attribute> FIREPERCENTDAMAGE = ATTRIBUTES.register("fire_percent_damage", () -> (new RangedAttribute("attribute." + ExmoxlMod.MODID + ".fire_percent_damage", 0, 0, 100000000)).setSyncable(true));
 	public static final RegistryObject<Attribute> WATERPERCENTDAMAGE = ATTRIBUTES.register("water_percent_damage", () -> (new RangedAttribute("attribute." + ExmoxlMod.MODID + ".water_percent_damage", 0, 0, 100000000)).setSyncable(true));
+	public static final RegistryObject<Attribute> CHARM = ATTRIBUTES.register("charm", () -> (new RangedAttribute("attribute." + ExmoxlMod.MODID + ".charm", 0, 0, 100000000)).setSyncable(true));
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {
@@ -142,15 +143,56 @@ public class ExmoxlModAttributes {
 		event.add(EntityType.PLAYER, AGILE.get());
 		event.add(EntityType.PLAYER, SPIRIT.get());
 		event.add(EntityType.PLAYER, SPRITATTACK.get());
-		event.add(EntityType.PLAYER, WOODDAMAGE.get());
-		event.add(EntityType.PLAYER, WATERDAMAGE.get());
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, WOODDAMAGE.get());
+			}
+		});
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, WATERDAMAGE.get());
+			}
+		});
 		event.add(EntityType.PLAYER, FIREADAMAGE.get());
-		event.add(EntityType.PLAYER, WOODDEFENSE.get());
-		event.add(EntityType.PLAYER, WATERDEFENSE.get());
-		event.add(EntityType.PLAYER, FIREDEFENSE.get());
-		event.add(EntityType.PLAYER, WOODPERCENTDAMAGE.get());
-		event.add(EntityType.PLAYER, FIREPERCENTDAMAGE.get());
-		event.add(EntityType.PLAYER, WATERPERCENTDAMAGE.get());
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, WOODDEFENSE.get());
+			}
+		});
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, WATERDEFENSE.get());
+			}
+		});
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, FIREDEFENSE.get());
+			}
+		});
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, WOODPERCENTDAMAGE.get());
+			}
+		});
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, FIREPERCENTDAMAGE.get());
+			}
+		});
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, WATERPERCENTDAMAGE.get());
+			}
+		});
+		event.add(EntityType.PLAYER, CHARM.get());
 	}
 
 	@Mod.EventBusSubscriber
@@ -190,6 +232,7 @@ public class ExmoxlModAttributes {
 			newP.getAttribute(WOODPERCENTDAMAGE.get()).setBaseValue(oldP.getAttribute(WOODPERCENTDAMAGE.get()).getBaseValue());
 			newP.getAttribute(FIREPERCENTDAMAGE.get()).setBaseValue(oldP.getAttribute(FIREPERCENTDAMAGE.get()).getBaseValue());
 			newP.getAttribute(WATERPERCENTDAMAGE.get()).setBaseValue(oldP.getAttribute(WATERPERCENTDAMAGE.get()).getBaseValue());
+			newP.getAttribute(CHARM.get()).setBaseValue(oldP.getAttribute(CHARM.get()).getBaseValue());
 		}
 	}
 }

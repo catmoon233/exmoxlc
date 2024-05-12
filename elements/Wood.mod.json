@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.2,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s 被木灵力汲取了所有精华",
+    "itemDeathMessage": "%1$s 被 %2$s 使用 %3$s 同化成枯草",
+    "playerDeathMessage": "%1$s 未能逃过枯萎的侵蚀 %2$s"
+  }
+}

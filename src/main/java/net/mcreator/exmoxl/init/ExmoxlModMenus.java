@@ -13,12 +13,14 @@ import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.exmoxl.world.inventory.WeawordkbeachguiMenu;
 import net.mcreator.exmoxl.world.inventory.TaskguiMenu;
+import net.mcreator.exmoxl.world.inventory.StoneDungeonMenu;
 import net.mcreator.exmoxl.world.inventory.RecastingMenu;
 import net.mcreator.exmoxl.world.inventory.LotteryweaponMenu;
 import net.mcreator.exmoxl.world.inventory.LotteryshiMenu;
 import net.mcreator.exmoxl.world.inventory.LotterydanMenu;
 import net.mcreator.exmoxl.world.inventory.LotteryMainMenu;
 import net.mcreator.exmoxl.world.inventory.ChooseclassguiMenu;
+import net.mcreator.exmoxl.world.inventory.CharacterxttalentMenu;
 import net.mcreator.exmoxl.world.inventory.CharacterPanelMenu;
 import net.mcreator.exmoxl.world.inventory.AttrmbMenu;
 import net.mcreator.exmoxl.world.inventory.ActivatiguiMenu;
@@ -37,4 +39,6 @@ public class ExmoxlModMenus {
 	public static final RegistryObject<MenuType<LotterydanMenu>> LOTTERYDAN = REGISTRY.register("lotterydan", () -> IForgeMenuType.create(LotterydanMenu::new));
 	public static final RegistryObject<MenuType<LotteryshiMenu>> LOTTERYSHI = REGISTRY.register("lotteryshi", () -> IForgeMenuType.create(LotteryshiMenu::new));
 	public static final RegistryObject<MenuType<TaskguiMenu>> TASKGUI = REGISTRY.register("taskgui", () -> IForgeMenuType.create(TaskguiMenu::new));
+	public static final RegistryObject<MenuType<CharacterxttalentMenu>> CHARACTERXTTALENT = REGISTRY.register("characterxttalent", () -> IForgeMenuType.create(CharacterxttalentMenu::new));
+	public static final RegistryObject<MenuType<StoneDungeonMenu>> STONE_DUNGEON = REGISTRY.register("stone_dungeon", () -> IForgeMenuType.create(StoneDungeonMenu::new));
 }

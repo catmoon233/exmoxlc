@@ -37,22 +37,15 @@ import net.mcreator.exmoxl.init.ExmoxlModEntities;
 import net.mcreator.exmoxl.init.ExmoxlModEnchantments;
 import net.mcreator.exmoxl.init.ExmoxlModBlocks;
 import net.mcreator.exmoxl.init.ExmoxlModBlockEntities;
-import net.minecraftforge.event.AttachCapabilitiesEvent;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.resources.ResourceLocation;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.List;
 import java.util.Collection;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-
 import java.util.ArrayList;
 import java.util.AbstractMap;
-import net.minecraft.world.entity.Entity;
-import org.apache.commons.compress.harmony.unpack200.bytecode.forms.InitMethodReferenceForm;
 
 @Mod("exmoxl")
 public class ExmoxlMod {
@@ -62,7 +55,6 @@ public class ExmoxlMod {
 	public ExmoxlMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		ExmoxlModBlocks.REGISTRY.register(bus);
 		ExmoxlModBlockEntities.REGISTRY.register(bus);
@@ -70,6 +62,7 @@ public class ExmoxlMod {
 		ExmoxlModEntities.REGISTRY.register(bus);
 		ExmoxlModEnchantments.REGISTRY.register(bus);
 		ExmoxlModTabs.REGISTRY.register(bus);
+
 		ExmoxlModMobEffects.REGISTRY.register(bus);
 
 		ExmoxlModMenus.REGISTRY.register(bus);
@@ -89,8 +82,6 @@ public class ExmoxlMod {
 	public static void queueServerWork(int tick, Runnable action) {
 		workQueue.add(new AbstractMap.SimpleEntry(action, tick));
 	}
-
-
 
 	@SubscribeEvent
 	public void tick(TickEvent.ServerTickEvent event) {

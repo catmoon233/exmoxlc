@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "exmoxl:block/stone_sign"
+    },
+    "facing=east": {
+      "model": "exmoxl:block/stone_sign",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "exmoxl:block/stone_sign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "exmoxl:block/stone_sign",
+      "y": 270
+    }
+  }
+}

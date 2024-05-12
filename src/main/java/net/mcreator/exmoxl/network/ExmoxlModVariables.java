@@ -15,10 +15,12 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -29,6 +31,7 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.StringTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.IntTag;
+import net.minecraft.nbt.DoubleTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
@@ -45,6 +48,8 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ExmoxlModVariables {
 	public static List<Object> mixins = new ArrayList<>();
+	public static List<Object> spawnhoslevel = new ArrayList<>();
+	public static List<Object> spawnhosworld = new ArrayList<>();
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -104,6 +109,14 @@ public class ExmoxlModVariables {
 			clone.taskftitle = original.taskftitle;
 			clone.taskget = original.taskget;
 			clone.taskxz = original.taskxz;
+			clone.lingwu = original.lingwu;
+			clone.Innatetalent = original.Innatetalent;
+			clone.SelectTalent = original.SelectTalent;
+			clone.istianfuSe = original.istianfuSe;
+			clone.TalentSz2 = original.TalentSz2;
+			clone.TalentSz = original.TalentSz;
+			clone.StoneSignIndex = original.StoneSignIndex;
+			clone.SelectDungeon = original.SelectDungeon;
 			if (!event.isWasDeath()) {
 				clone.wearonxumiring = original.wearonxumiring;
 			}
@@ -170,6 +183,7 @@ public class ExmoxlModVariables {
 		public boolean isserver = false;
 		public Map<UUID, String> bossstring = new HashMap<UUID, String>();
 		public double bossstringyz = 50.0;
+		public List<Vec3> spawnpos = new ArrayList<>();
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -186,6 +200,15 @@ public class ExmoxlModVariables {
 				bossstring.put(uuid, value);
 			}
 			bossstringyz = nbt.getDouble("bossstringyz");
+			{
+				ListTag spawnposParentListTag = nbt.getList("spawnpos", 9);
+				List<Vec3> list = new ArrayList<>();
+				for (int i = 0; i < spawnposParentListTag.size(); ++i) {
+					ListTag spawnposChildListTag = spawnposParentListTag.getList(i);
+					list.add(new Vec3(spawnposChildListTag.getDouble(0), spawnposChildListTag.getDouble(1), spawnposChildListTag.getDouble(2)));
+				}
+				spawnpos = list;
+			}
 		}
 
 		@Override
@@ -197,6 +220,17 @@ public class ExmoxlModVariables {
 			}
 			nbt.put("bossstring", uuidMapTag);
 			nbt.putDouble("bossstringyz", bossstringyz);
+			{
+				ListTag spawnposParentListTag = new ListTag();
+				for (Vec3 vec3 : spawnpos) {
+					ListTag spawnposChildListTag = new ListTag();
+					spawnposChildListTag.add(DoubleTag.valueOf(vec3.x()));
+					spawnposChildListTag.add(DoubleTag.valueOf(vec3.y()));
+					spawnposChildListTag.add(DoubleTag.valueOf(vec3.z()));
+					spawnposParentListTag.add(spawnposChildListTag);
+				}
+				nbt.put("spawnpos", spawnposParentListTag);
+			}
 			return nbt;
 		}
 
@@ -304,14 +338,22 @@ public class ExmoxlModVariables {
 		public double hd = 0;
 		public List<Integer> chou = new ArrayList<>();
 		public double clevel = 0;
-		public double cnum = 0;
+		public double cnum = 0.0;
 		public List<String> task = new ArrayList<>();
 		public List<String> taskfinnishi = new ArrayList<>();
 		public String tasktitle = "\"\"";
 		public String tasknr = "\"\"";
 		public String taskftitle = "\"\"";
-		public String taskget = "\"\"";
+		public String taskget = "\u65E0";
 		public double taskxz = 0;
+		public ItemStack lingwu = ItemStack.EMPTY;
+		public List<String> Innatetalent = new ArrayList<>();
+		public List<String> SelectTalent = new ArrayList<>();
+		public boolean istianfuSe = false;
+		public List<Integer> TalentSz2 = new ArrayList<>();
+		public Map<String, Integer> TalentSz = new HashMap();
+		public String StoneSignIndex = "\"\"";
+		public double SelectDungeon = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -355,6 +397,30 @@ public class ExmoxlModVariables {
 			nbt.putString("taskftitle", taskftitle);
 			nbt.putString("taskget", taskget);
 			nbt.putDouble("taskxz", taskxz);
+			nbt.put("lingwu", lingwu.save(new CompoundTag()));
+			ListTag InnatetalentListTag = new ListTag();
+			for (String value : Innatetalent) {
+				InnatetalentListTag.add(StringTag.valueOf(value));
+			}
+			nbt.put("Innatetalent", InnatetalentListTag);
+			ListTag SelectTalentListTag = new ListTag();
+			for (String value : SelectTalent) {
+				SelectTalentListTag.add(StringTag.valueOf(value));
+			}
+			nbt.put("SelectTalent", SelectTalentListTag);
+			nbt.putBoolean("istianfuSe", istianfuSe);
+			ListTag TalentSz2ListTag = new ListTag();
+			for (Integer value : TalentSz2) {
+				TalentSz2ListTag.add(IntTag.valueOf(value));
+			}
+			nbt.put("TalentSz2", TalentSz2ListTag);
+			CompoundTag uuidMapTag = new CompoundTag();
+			for (Map.Entry<String, Integer> entry : TalentSz.entrySet()) {
+				uuidMapTag.putString(entry.getKey(), entry.getValue().toString());
+			}
+			nbt.put("TalentSz", uuidMapTag);
+			nbt.putString("StoneSignIndex", StoneSignIndex);
+			nbt.putDouble("SelectDungeon", SelectDungeon);
 			return nbt;
 		}
 
@@ -373,12 +439,14 @@ public class ExmoxlModVariables {
 			piao2 = nbt.getDouble("piao2");
 			spritnow = nbt.getDouble("spritnow");
 			hd = nbt.getDouble("hd");
-			ListTag chouListTag = nbt.getList("chou", 3);
-			List<Integer> list = new ArrayList<>();
-			for (int i = 0; i < chouListTag.size(); ++i) {
-				list.add(chouListTag.getInt(i));
+			{
+				ListTag chouListTag = nbt.getList("chou", 3);
+				List<Integer> list = new ArrayList<>();
+				for (int i = 0; i < chouListTag.size(); ++i) {
+					list.add(chouListTag.getInt(i));
+				}
+				chou = list;
 			}
-			chou = list;
 			clevel = nbt.getDouble("clevel");
 			cnum = nbt.getDouble("cnum");
 			ListTag taskListTag = nbt.getList("task", 8);
@@ -398,6 +466,35 @@ public class ExmoxlModVariables {
 			taskftitle = nbt.getString("taskftitle");
 			taskget = nbt.getString("taskget");
 			taskxz = nbt.getDouble("taskxz");
+			lingwu = ItemStack.of(nbt.getCompound("lingwu"));
+			ListTag InnatetalentListTag = nbt.getList("Innatetalent", 8);
+			List<String> Innatetalentlist = new ArrayList<>();
+			for (int i = 0; i < InnatetalentListTag.size(); ++i) {
+				Innatetalentlist.add(InnatetalentListTag.getString(i));
+			}
+			Innatetalent = Innatetalentlist;
+			ListTag SelectTalentListTag = nbt.getList("SelectTalent", 8);
+			List<String> SelectTalentlist = new ArrayList<>();
+			for (int i = 0; i < SelectTalentListTag.size(); ++i) {
+				SelectTalentlist.add(SelectTalentListTag.getString(i));
+			}
+			SelectTalent = SelectTalentlist;
+			istianfuSe = nbt.getBoolean("istianfuSe");
+			{
+				ListTag TalentSz2ListTag = nbt.getList("TalentSz2", 3);
+				List<Integer> list = new ArrayList<>();
+				for (int i = 0; i < TalentSz2ListTag.size(); ++i) {
+					list.add(TalentSz2ListTag.getInt(i));
+				}
+				TalentSz2 = list;
+			}
+			CompoundTag uuidMapTag = nbt.getCompound("TalentSz");
+			for (String key : uuidMapTag.getAllKeys()) {
+				String value = uuidMapTag.getString(key);
+				TalentSz.put(key, Integer.parseInt(value));
+			}
+			StoneSignIndex = nbt.getString("StoneSignIndex");
+			SelectDungeon = nbt.getDouble("SelectDungeon");
 		}
 	}
 
@@ -445,6 +542,14 @@ public class ExmoxlModVariables {
 					variables.taskftitle = message.data.taskftitle;
 					variables.taskget = message.data.taskget;
 					variables.taskxz = message.data.taskxz;
+					variables.lingwu = message.data.lingwu;
+					variables.Innatetalent = message.data.Innatetalent;
+					variables.SelectTalent = message.data.SelectTalent;
+					variables.istianfuSe = message.data.istianfuSe;
+					variables.TalentSz2 = message.data.TalentSz2;
+					variables.TalentSz = message.data.TalentSz;
+					variables.StoneSignIndex = message.data.StoneSignIndex;
+					variables.SelectDungeon = message.data.SelectDungeon;
 				}
 			});
 			context.setPacketHandled(true);

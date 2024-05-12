@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:gift",
+
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "exmoxl:star_flame_powder"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "exmoxl:washstone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "exmoxl:smelting_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "exmoxl:miscellaneous_dust"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"unbreaking\",lvl:10s}],display:{color:16711680,Name:'{\"text\":\"你，歪了？\"}',Lore:['{\"text\":\"一个石头，看到这个就代表你歪了，大概吧\"}']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "exmoxl:blueweapon"
+
+}

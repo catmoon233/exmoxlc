@@ -1,0 +1,83 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "xbj.png",
+          "use1Xscale": false,
+          "x": 15,
+          "y": 17
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_xiandao",
+          "image": "xiandao.png",
+          "hoveredImage": "xiandao2.png",
+          "onClick": {
+            "name": "Changeclass"
+          },
+          "x": 42,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_yaodao",
+          "image": "yaodao.png",
+          "hoveredImage": "yaodao2.png",
+          "onClick": {
+            "name": "Changeclass"
+          },
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rendao",
+          "image": "rendao.png",
+          "hoveredImage": "rendao2.png",
+          "onClick": {
+            "name": "Changeclass"
+          },
+          "x": 240,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_modao",
+          "image": "modao.png",
+          "hoveredImage": "modao2.png",
+          "onClick": {
+            "name": "Changeclass"
+          },
+          "x": 339,
+          "y": 53
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "exmoxl:block/oak_planks",
+    "up": "exmoxl:block/oak_planks",
+    "north": "exmoxl:block/oak_planks",
+    "east": "exmoxl:block/oak_planks",
+    "south": "exmoxl:block/oak_planks",
+    "west": "exmoxl:block/oak_planks",
+    "particle": "exmoxl:block/oak_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "children": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "exmoxl:models/item/1111.obj",
+      "emissive_ambient": true,
+      "textures": {
+        "#m_e52e8012-bd5f-a8cc-6e19-5b061db2c0da": "exmoxl:block/texture"
+      }
+    }
+  },
+  "textures": {
+    "particle": "exmoxl:block/texture"
+  },
+  "render_type": "solid"
+}

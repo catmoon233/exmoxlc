@@ -1,0 +1,42 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "a",
+    "customModelName": "jian_:default",
+    "blockingModelName": "Normal blocking",
+    "name": "东南枝",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Exmoxl"
+    },
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.8,
+    "enchantability": 0,
+    "damageVsEntity": 21.0,
+    "usageCount": 10000,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "DnzYouJiFangKuaiShiFangKuaiDeWeiZhi"
+    },
+    "onEntityHitWith": {
+      "name": "DnzShiTiBeiGongJuJiZhongShi"
+    },
+    "onItemInUseTick": {
+      "name": "DnzGongJuChuXianZaiShouZhongShiMeiKeFaSheng"
+    }
+  }
+}

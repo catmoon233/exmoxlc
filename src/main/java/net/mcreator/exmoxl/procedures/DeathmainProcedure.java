@@ -1,5 +1,8 @@
 package net.mcreator.exmoxl.procedures;
 
+import net.mcreator.exmoxl.ExmoxlMod;
+import net.mcreator.exmoxl.Talent;
+import net.mcreator.exmoxl.TalentList;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -32,6 +35,8 @@ import net.mcreator.exmoxl.network.ExmoxlModVariables;
 import net.mcreator.exmoxl.init.ExmoxlModItems;
 
 import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Map;
 
 @Mod.EventBusSubscriber
 public class DeathmainProcedure {
@@ -71,7 +76,7 @@ public class DeathmainProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 				}
-				if (sourceentity instanceof Player) {
+				if (sourceentity instanceof Player player) {
 					xljy = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
 					while (xljy > 100) {
 						xljy = xljy * 0.01;
@@ -91,10 +96,35 @@ public class DeathmainProcedure {
 							capability.syncPlayerVariables(sourceentity);
 						});
 					}
+					List<TalentList.Talent> talents = TalentList.TalentCList;
+					Map<String, Integer> Sectf;
+					Sectf = (player.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).TalentSz;
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal(("\u4F60\u83B7\u5F97\u4E86" + jysl + "\u70B9\u7ECF\u9A8C")), false);
 					while ((sourceentity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playerxp > (sourceentity
 							.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playerupxp) {
+						if(
+							!((LevelAccessor)player.level()).isClientSide()
+						) {
+							//ExmoxlMod.LOGGER.debug("Onup2");
+
+						Sectf.forEach((k, v) -> {
+							if(v>0) {
+								//ExmoxlMod.LOGGER.debug("Onup");
+								for(TalentList.Talent talent : talents){
+									if(talent.displayname.equals(k)){
+										if(TalentList.onupr(talent, player, v)!=null) {
+											TalentList.onupr(talent, player, v).run();
+										}
+									//	ExmoxlMod.LOGGER.debug("use");
+
+									}
+
+								}
+							}
+
+						});
+						}
 						{
 							double _setval = (sourceentity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playerxp
 									- (sourceentity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).playerupxp;

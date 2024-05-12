@@ -45,17 +45,6 @@ public class RendertoolqualityProcedure {
 			tooltip.add(Component.literal("\u00A77\u5347\u7EA7\u7ECF\u9A8C:"));
 			tooltip.add(Component.literal(("\u00A77 " + itemstack.getOrCreateTag().getDouble("xp") + "/" + itemstack.getOrCreateTag().getDouble("xpneed"))));
 			tooltip.add(Component.literal(("\u00A77\u72EC\u6709\u8BCD\u6761:" + itemstack.getOrCreateTag().getString("roll2s"))));
-			tooltip.add(Component.literal(("\u00A77\u6D17\u7EC3\u6B21\u6570:" + itemstack.getOrCreateTag().getDouble("zizhi"))));
-			if (!(itemstack.getOrCreateTag().getString("roll4s1.0")).equals("")) {
-				tooltip.add(Component.literal("\u00A77\u6838\u5FC3:"));
-				tooltip.add(Component.literal(("\u00A77" + itemstack.getOrCreateTag().getString("roll4s1.0"))));
-				if (!(itemstack.getOrCreateTag().getString("roll4s2.0")).equals("")) {
-					tooltip.add(Component.literal(("\u00A77" + itemstack.getOrCreateTag().getString("roll4s2.0"))));
-				}
-				if (!(itemstack.getOrCreateTag().getString("roll4s3.0")).equals("")) {
-					tooltip.add(Component.literal(("\u00A77" + itemstack.getOrCreateTag().getString("roll4s3.0"))));
-				}
-			}
 		}
 	}
 }

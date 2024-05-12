@@ -1,0 +1,197 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "attmb.png",
+          "use1Xscale": false,
+          "x": 105,
+          "y": 17
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "Selfmodle"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_attmbb22",
+          "image": "attmbb22.png",
+          "hoveredImage": "attmbb2.png",
+          "onClick": {
+            "name": "Stradd"
+          },
+          "x": 235,
+          "y": 36
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_attmbb221",
+          "image": "attmbb22.png",
+          "hoveredImage": "attmbb2.png",
+          "onClick": {
+            "name": "Agiadd"
+          },
+          "x": 235,
+          "y": 59
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_attmbb222",
+          "image": "attmbb22.png",
+          "hoveredImage": "attmbb2.png",
+          "onClick": {
+            "name": "Igiadd"
+          },
+          "x": 235,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_strxs",
+          "text": {
+            "fixedValue": "",
+            "name": "Strxs"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 38
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_agisx",
+          "text": {
+            "fixedValue": "",
+            "name": "Agisx"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_igns",
+          "text": {
+            "fixedValue": "",
+            "name": "Igns"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 84
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "levelbar1.png",
+          "use1Xscale": true,
+          "x": 114,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "levelbar2.png",
+          "use1Xscale": true,
+          "x": 114,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_xpxs",
+          "text": {
+            "fixedValue": "",
+            "name": "Xpxs"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 120,
+          "y": 122
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_levelxs",
+          "text": {
+            "fixedValue": "",
+            "name": "Levelxs"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 218,
+          "y": 123
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_tfdsx",
+          "text": {
+            "fixedValue": "",
+            "name": "Tfdsx"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 245,
+          "y": 105
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

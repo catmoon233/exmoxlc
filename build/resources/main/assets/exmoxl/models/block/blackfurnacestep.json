@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "exmoxl:block/furnace",
+    "top": "exmoxl:block/furnace",
+    "side": "exmoxl:block/furnace"
+  },
+  "render_type": "solid"
+}

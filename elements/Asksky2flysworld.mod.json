@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Wandao"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "item.crossbow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelasksky2_Converted_Converted",
+    "customModelTexture": "texture.png",
+    "onFlyingTick": {
+      "name": "Asksky2flysworldDanSheWuFeiXingShiMeiKeFaSheng"
+    }
+  }
+}

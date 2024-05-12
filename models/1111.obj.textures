@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_e52e8012-bd5f-a8cc-6e19-5b061db2c0da": "texture"
+      },
+      "name": "default"
+    }
+  }
+}

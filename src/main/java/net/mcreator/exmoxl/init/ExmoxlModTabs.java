@@ -41,6 +41,7 @@ public class ExmoxlModTabs {
 				tabData.accept(ExmoxlModBlocks.WEAWORKBEACH.get().asItem());
 				tabData.accept(ExmoxlModItems.DNZ.get());
 				tabData.accept(ExmoxlModItems.ASKSKY_2.get());
+				tabData.accept(ExmoxlModBlocks.STONE_SIGN.get().asItem());
 			})
 
 					.build());

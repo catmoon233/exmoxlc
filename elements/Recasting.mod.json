@@ -1,0 +1,249 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:SmeltingStone"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 89
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ci_chu_fang_ru_zhong_zhu_shi",
+          "text": {
+            "fixedValue": "此处放入重铸石"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 159,
+          "y": 89
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_recasting2",
+          "image": "recasting2.png",
+          "hoveredImage": "recasting3.png",
+          "onClick": {
+            "name": "Recastinglc"
+          },
+          "displayCondition": {
+            "name": "Recpd1"
+          },
+          "x": 186,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_recasting21",
+          "image": "recasting2.png",
+          "hoveredImage": "recasting3.png",
+          "onClick": {
+            "name": "Recastinglc"
+          },
+          "displayCondition": {
+            "name": "Recpd2"
+          },
+          "x": 186,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_recasting22",
+          "image": "recasting2.png",
+          "hoveredImage": "recasting3.png",
+          "onClick": {
+            "name": "Recastinglc"
+          },
+          "displayCondition": {
+            "name": "Recpd3"
+          },
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 53
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ci_chu_fang_ru_sheng_ji_ji_pin",
+          "text": {
+            "fixedValue": "此处放入升级祭品"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 159,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "recasting1.png",
+          "use1Xscale": false,
+          "x": 186,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "recasting1.png",
+          "use1Xscale": false,
+          "x": 186,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "recasting1.png",
+          "use1Xscale": false,
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_rect_1",
+          "text": {
+            "fixedValue": "",
+            "name": "Rect1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Recxst"
+          },
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_rect_2",
+          "text": {
+            "fixedValue": "",
+            "name": "Rect2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Recxst"
+          },
+          "x": 195,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_rect_3",
+          "text": {
+            "fixedValue": "",
+            "name": "Rect3"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Recxst"
+          },
+          "x": 195,
+          "y": 98
+        }
+      }
+    ],
+    "onTick": {
+      "name": "Recastinglc2"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

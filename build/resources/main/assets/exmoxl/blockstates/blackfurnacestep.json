@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "exmoxl:block/blackfurnacestep"
+    },
+    "type=top": {
+      "model": "exmoxl:block/blackfurnacestep_top"
+    },
+    "type=double": {
+      "model": "exmoxl:block/blackfurnacestep_full"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      },
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      },
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      },
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      },
+      {
+        "value": "Blocks.MAGMA"
+      },
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      },
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      },
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      },
+      {
+        "value": "CUSTOM:MiscellaneousDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SmeltingStone"
+    },
+    "name": "rongliangshi",
+    "namespace": "mod"
+  }
+}

@@ -1,5 +1,6 @@
 package net.mcreator.exmoxl.procedures;
-import net.mcreator.exmoxl.network.ExmoxlModVariables;
+
+import net.mcreator.exmoxl.network.ExmoxlModVariables;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -19,7 +20,7 @@ public class TaskszcProcedure {
 	public static void execute(Player entity) {
 
             //130 36
-			System.out.printf("66666666666666666666666666666666666666666");
+			//System.out.printf("66666666666666666666666666666666666666666");
             List<String> pl;
             pl = (entity.getCapability(ExmoxlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ExmoxlModVariables.PlayerVariables())).task;
             int mx = TaskguiScreen.mx;

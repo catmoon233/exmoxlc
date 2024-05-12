@@ -1,0 +1,9 @@
+{
+  "parent": "exmoxl:custom/stonesign",
+  "textures": {
+    "all": "exmoxl:block/stonesigh",
+    "particle": "exmoxl:block/stonesigh",
+    "0": "exmoxl:block/stonesigh"
+  },
+  "render_type": "solid"
+}

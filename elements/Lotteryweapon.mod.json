@@ -1,0 +1,89 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_shilianbutton",
+          "image": "shilian-button.png",
+          "hoveredImage": "shilian-button2.png",
+          "onClick": {
+            "name": "Shilian"
+          },
+          "x": 285,
+          "y": 170
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_danchoubutton",
+          "image": "danchou-button.png",
+          "hoveredImage": "danchou-button2.png",
+          "onClick": {
+            "name": "Danchou"
+          },
+          "x": 195,
+          "y": 170
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ka2.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_textofchou",
+          "text": {
+            "fixedValue": "",
+            "name": "Textofchou"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 38,
+          "y": 189
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_textofchou_2",
+          "text": {
+            "fixedValue": "",
+            "name": "Textofchou2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 37,
+          "y": 175
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

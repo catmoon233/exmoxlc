@@ -1,0 +1,58 @@
+{
+  "_fv": 57,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bossbar.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_CENTER",
+          "x": 114,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bossbar2.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_CENTER",
+          "x": 114,
+          "y": -1
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_tickbossdisplayname",
+          "text": {
+            "fixedValue": "",
+            "name": "Tickbossdisplayname"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_CENTER",
+          "x": 114,
+          "y": 8
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "Tickboss"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

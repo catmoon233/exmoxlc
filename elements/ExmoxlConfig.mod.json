@@ -1,0 +1,51 @@
+{
+  "_fv": 57,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "function",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "开启种族功能",
+            "vardisplay": "种族功能",
+            "varname": "classa",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "CUSTOM:As"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "玩家开始默认血量",
+            "vardisplay": "玩家默认血量",
+            "varname": "defualthelth",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "CUSTOM:As"
+          }
+        ]
+      }
+    ],
+    "file": "exmoxl",
+    "configType": 0
+  }
+}
